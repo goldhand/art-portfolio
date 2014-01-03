@@ -26,7 +26,6 @@ urlpatterns = patterns('imagestore.views',
                        url(r'^image/(?P<pk>\d+)/update/$', UpdateImage.as_view(), name='update-image'),
 
 
-                       url(r'^albums/$', AlbumList.as_view(), name='album-list'),
 
                        )
 
