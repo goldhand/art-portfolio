@@ -1,7 +1,7 @@
 art-portfolio
 ==============================
 
-"A portfolio website for Elise"
+A portfolio website for Elisa
 
 
 LICENSE: BSD
