@@ -1,1 +1,1478 @@
 {% extends "base.html" %}
+
+{% block content %}
+  <div class="bs-header">
+    <div class="container">
+      <h1>Dropper Extras</h1>
+      <p class="lead">New Bootstrap 3 elements</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+  <!-- Extents   =========================================================== -->
+
+  <div class="row">
+
+  <div class="col-sm-3 col-lg-3">
+    <div class="list-group menu-list" data-spy="affix" data-offset-top="260">
+      <a class="list-group-item" href="#button-variant"><i class="fa fa-angle-right"></i> Buttons Variants</a>
+      <a class="list-group-item" href="#input-variant"><i class="fa fa-angle-right"></i> Input Variants</a>
+      <a class="list-group-item" href="#valign"><i class="fa fa-angle-right"></i> Vertical Align</a>
+      <a class="list-group-item" href="#video"><i class="fa fa-angle-right"></i> Video</a>
+      <a class="list-group-item" href="#testimonial"><i class="fa fa-angle-right"></i> Testimonials</a>
+      <a class="list-group-item" href="#gallery"><i class="fa fa-angle-right"></i> Effect Gallery</a>
+      <a class="list-group-item" href="#flicker"><i class="fa fa-angle-right"></i> Flickr Badge</a>
+      <a class="list-group-item" href="#upload"><i class="fa fa-angle-right"></i> File Upload</a>
+      <a class="list-group-item" href="#inputmask"><i class="fa fa-angle-right"></i> Input Mask</a>
+      <a class="list-group-item" href="#gmap"><i class="fa fa-angle-right"></i> Google Maps</a>
+      <a class="list-group-item" href="#ribbon"><i class="fa fa-angle-right"></i> Ribbon</a>
+      <a class="list-group-item" href="#about"><i class="fa fa-angle-right"></i> About</a>
+      <a class="list-group-item" href="#tweet"><i class="fa fa-angle-right"></i> Twitter Feed</a>
+      <a class="list-group-item" href="#datepicker"><i class="fa fa-angle-right"></i> Datepicker</a>
+      <a class="list-group-item" href="#colorpicker"><i class="fa fa-angle-right"></i> Colorpicker</a>
+      <a class="list-group-item" href="#pricetable"><i class="fa fa-angle-right"></i> Pricing Table</a>
+      <a class="list-group-item" href="#awesome"><i class="fa fa-angle-right"></i> Font Awesome</a>
+      <a class="list-group-item" href="#drops"><i class="fa fa-angle-right"></i> Drops</a>
+    </div>
+  </div>
+
+  <div class="col-sm-9 col-lg-9">
+
+  <!-- Button Variant
+  ================================================== -->
+  <section id="button-variant">
+
+    <div class="page-header">
+      <h1>Buttons <small>New styles</small></h1>
+    </div>
+
+    <p>Turn button styles applied with one extra class to a standard <code>.btn</code></p>
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>Button</th>
+        <th>class=""</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><button type="button" class="btn btn-default btn-turn-primary">Turn Primary</button></td>
+        <td><code>btn btn-default btn-turn-primary</code></td>
+        <td>Standard gray button turns into primary color</td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-default btn-turn-info">Turn Info</button></td>
+        <td><code>btn btn-default btn-turn-info</code></td>
+        <td>Standard gray button turns into info color</td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-default btn-turn-success">Turn Success</button></td>
+        <td><code>btn btn-default btn-turn-success</code></td>
+        <td>Standard gray button turns into success color</td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-default btn-turn-warning">Turn Warning</button></td>
+        <td><code>btn btn-default btn-turn-warning</code></td>
+        <td>Standard gray button turns into warning color</td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-default btn-turn-danger">Turn Danger</button></td>
+        <td><code>btn btn-default btn-turn-danger</code></td>
+        <td>Standard gray button turns into danger color</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <p class="lead">Some buttons ready for social interaction.</p>
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>Button</th>
+        <th>class=""</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><button type="button" class="btn btn-facebook"><em class="icon fa fa-facebook"></em> Facebook</button></td>
+        <td><code>btn btn-facebook</code></td>
+        <td>Standard facebook button</td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-twitter"><em class="icon fa fa-twitter"></em> Twitter</button></td>
+        <td><code>btn btn-google</code></td>
+        <td>Standard Twitter button </td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-google"><em class="icon fa fa-google-plus"></em> Google</button></td>
+        <td><code>btn btn-google</code></td>
+        <td>Standard Google button</td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-rss"><em class="icon fa fa-rss"></em> RSS</button></td>
+        <td><code>btn btn-rss</code></td>
+        <td>Standard Google button</td>
+      </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <!-- Input Variant
+  ================================================== -->
+  <section id="input-variant">
+    <div class="page-header">
+      <h1>Form Inputs <small>variants</small></h1>
+    </div>
+
+    <p>Provide class <code>.input-flat</code> to <code>.form-control</code> make inputs become flat. </p>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+
+        <form action="#">
+          <div class="input-group">
+            <span class="input-group-addon">@</span>
+            <input class="form-control input-flat" id="prependedInput2" type="text" placeholder="Username">
+          </div>
+          <br />
+          <div class="input-group">
+            <input class="form-control input-flat" id="appendedInput2" type="text">
+            <span class="input-group-addon">.00</span>
+          </div>
+
+          <br />
+
+          <div class="input-group input-group">
+            <span class="input-group-addon">$</span>
+            <input class="form-control input-flat" id="appendedPrependedInput2" type="text">
+            <span class="input-group-addon">.00</span>
+          </div>
+          <br />
+          <div class="input-group">
+            <input class="form-control input-flat" id="appendedInputButton2" type="text">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                  </span>
+          </div>
+        </form>
+        <form action="#">
+          <div class="input-group">
+            <input type="text" class="form-control search-query input-flat">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">Search</button>
+                  </span>
+          </div>
+          <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">Search</button>
+                  </span>
+            <input type="text" class="form-control search-query input-flat">
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <h2>Selects</h2>
+        <br>
+        <div>
+          <form >
+            <legend>Classics</legend>
+            <select class="form-control" data-style="primary">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <br>
+            <legend>Advanced</legend>
+            <select class="form-control" data-toggle="dropdown-select" data-style="primary">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </form>
+          <p>Just add attribute <code>data-toggle="dropdown-select"</code> to any select to chages style</p>
+          <p>Change the style with <code>data-style</code> attribute</p>
+
+          <div>
+            <select class="form-control" data-toggle="dropdown-select" data-style="danger">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <select class="form-control" data-toggle="dropdown-select" data-style="success">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <select class="form-control" data-toggle="dropdown-select" data-style="warning">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <select class="form-control" data-toggle="dropdown-select" data-style="info">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Hilight Append</h2>
+    <p>Provide an extra class <code>.hilight-append</code> to <code>.input-group</code> to hilight buttons on focus. </p>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+
+        <form action="#">
+          <div class="input-group hilight-append">
+            <input class="form-control " id="appendedInputButton3" type="text">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                  </span>
+          </div>
+          <div class="input-group hilight-append">
+            <input class="form-control input-flat" id="appendedInputButtons3" type="text">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Search</button>
+                    <button class="btn btn-default" type="button">Options</button>
+                  </span>
+          </div>
+        </form>
+        <form action="#">
+          <div class="input-group hilight-append">
+            <input type="text" class="form-control input-flat">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">Search</button>
+                  </span>
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Vertical Align
+  ================================================== -->
+  <section id="valign">
+
+    <h2>Vertical Align Grid</h2>
+    <p>
+      This feature allows you to align vertical a set a components using  an optional grid to set the width.
+    </p>
+    <br><br>
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+
+        <div class="valign" style="border: 1px solid #ccc; padding: 10px 0">
+          <div class="cell-1-4 text-center text-danger">
+            <em class="fa fa-tint fa fa-4x"></em>
+          </div>
+          <div class="cell-3-4" >
+            I'm vertically aligned with my neighbour
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+
+        <div class="valign" style="border: 1px solid #ccc; padding: 10px 0">
+          <div class="cell-1-4 text-center text-danger">
+            <em class="fa fa-tint fa fa-4x"></em>
+          </div>
+          <div class="text-center cell-2-4">
+            I'm vertically aligned with my two neighbours
+          </div>
+          <div class="cell-1-4 text-center text-success">
+            <em class="fa fa-tint fa fa-4x"></em>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br><br>
+    <h2>Markup</h2>
+<pre class="prettyprint linenums">
+&lt;div class="valign">
+  &lt;div class="cell-1-4 text-center text-error">
+    &lt;em class="fa fa-tint fa fa-4x">&lt;/em>
+  &lt;/div>
+  &lt;div class="cell-3-4">
+    I'm vertically aligned with my neighbour
+  &lt;/div>
+&lt;/div>
+</pre>
+    <p>The grid support up to 6 fluid columns but you can customize it adding more custom classes</p>
+    <p>Some columns examples</p>
+    <p>One half <code>.cell-1-2</code></p>
+    <p>One third <code>.cell-1-3</code></p>
+    <p>Two third <code>.cell-2-3</code></p>
+    <p>Three fourth <code>.cell-3-4</code></p>
+    <p>Four fifth <code>.cell-4-5</code></p>
+
+  </section>
+
+
+  <!-- Responsive Video
+  ================================================== -->
+  <section id="video">
+    <div class="page-header">
+      <h1>Responsive Video <small>from Foundation 4</small></h1>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-sm-6">
+        <div class="flex-video">
+          <iframe width="500" height="315" src="http://www.youtube.com/embed/c9MnSeYYtYY" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <p>4:3 is the default size for the .flex-video element, and the assumption for .flex-video for chrome (controls) height is based on YouTube.</p>
+      </div>
+      <div class="col-lg-6 col-sm-6">
+        <div class="flex-video widescreen vimeo">
+          <iframe src="http://player.vimeo.com/video/7449107" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+        <p>Because Vimeo places their chrome on the player itself, adding a class of .vimeo creates a container that is sized for the video only — no extra padding for the controls.</p>
+      </div>
+    </div>
+
+<pre class="prettyprint linenums">
+&lt;div class="flex-video">
+&lt;iframe width="500" height="315" src="http://www.youtube.com/embed/c9MnSeYYtYY" frameborder="0" allowfullscreen>
+&lt;/iframe>
+&lt;/div>
+</pre>
+    <p class="lead">Learn more about FlexVideo <a target="_blank" href="http://foundation.zurb.com/docs/components/flex-video.html">here</a></p>
+
+  </section>
+
+
+  <!-- Testimonials
+  ================================================== -->
+  <section id="testimonial">
+    <div class="page-header">
+      <h1>Testimonial</h1>
+    </div>
+
+    <div class='testimonial'>
+      <blockquote>
+        Lorem ipsum sit dolor ares ameit. This could be a blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tristique odio, quis fringilla.Vivamus nec sapien massa, a imperdiet diam.
+      </blockquote>
+      <p class='testimonial-footer'>
+        <img class="img-thumbnail" src="assets/img/image-placeholder-64x64.png" height="64" width="64" >
+        <b>John Doe</b> &mdash; designer
+      </p>
+    </div>
+
+<pre class="prettyprint linenums">
+&lt;div class='testimonial'>
+  &lt;blockquote>.....&lt;/blockquote>
+  &lt;p class='testimonial-footer'>
+      &lt;img data-src="holder.js/32x32" />
+      &lt;b>John Doe&lt;/b> &mdash; designer
+  &lt;/p>
+&lt;/div>
+</pre>
+    <p class="lead">Right aligned</p>
+
+    <div class='testimonial'>
+      <blockquote>
+        Lorem ipsum sit dolor ares ameit. This could be a blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tristique odio, quis fringilla.Vivamus nec sapien massa, a imperdiet diam.
+      </blockquote>
+      <p class='testimonial-footer pull-right'>
+        <img class="img-thumbnail" src="assets/img/image-placeholder-64x64.png" >
+        <b>John Doe</b> &mdash; designer
+      </p>
+    </div>
+
+<pre class="prettyprint linenums">
+&lt;div class='testimonial'>
+  &lt;blockquote>.....&lt;/blockquote>
+  &lt;p class='testimonial-footer pull-right'>
+      &lt;img data-src="holder.js/32x32" />
+      &lt;b>John Doe&lt;/b> &mdash; designer
+  &lt;/p>
+&lt;/div>
+</pre>
+
+    <p class="lead">Testimonial Slider</p>
+
+    <div id="testimonialCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="item active">
+          <div class='testimonial'>
+            <blockquote>
+              Lorem ipsum sit dolor ares ameit. This could be a blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tristique odio, quis fringilla.Vivamus nec sapien massa, a imperdiet diam.
+            </blockquote>
+            <p class='testimonial-footer'>
+              <img class="img-thumbnail" src="assets/img/image-placeholder-64x64.png" height="64" width="64" >
+              <b>John Doe</b> &mdash; designer
+            </p>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="item">
+          <div class='testimonial'>
+            <blockquote>
+              Lorem ipsum sit dolor ares ameit. This could be a blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tristique odio, quis fringilla.Vivamus nec sapien massa, a imperdiet diam.
+            </blockquote>
+            <p class='testimonial-footer'>
+              <img class="img-thumbnail" src="assets/img/image-placeholder-64x64.png" height="64" width="64" >
+              <b>John Doe</b> &mdash; designer
+            </p>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#testimonialCarousel" data-slide="prev">
+        <span class="fa fa-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#testimonialCarousel" data-slide="next">
+        <span class="fa fa-next"></span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Gallery
+  ================================================== -->
+  <section id="gallery">
+  <div class="page-header">
+    <h1>Gallery</h1>
+  </div>
+  <p>Create a grid of thumbnails and and add <code>.gallery.effect-*</code></p>
+  <p>You have six different effects to choose</p>
+
+
+  <p class="lead">Effect 1</p>
+  <!-- Effect 1 -->
+  <div class="row gallery effect-1">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <a href="#">
+          <img src="assets/img/image-placeholder.png">
+        </a>
+        <div class="caption clearfix">
+          <div class="pull-left">
+            <b>Picture title</b>
+          </div>
+          <div class="pull-right">
+            <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <img src="assets/img/image-placeholder.png">
+        <div class="caption clearfix">
+          <div class="pull-left">
+            <b>Picture title</b>
+          </div>
+          <div class="pull-right">
+            <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <img src="assets/img/image-placeholder.png">
+        <div class="caption clearfix">
+          <div class="pull-left">
+            <b>Picture title</b>
+          </div>
+          <div class="pull-right">
+            <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="lead">Effect 2</p>
+  <!-- Effect 2 -->
+  <div class="row gallery effect-2">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <a href="#">
+          <img src="assets/img/image-placeholder.png">
+        </a>
+        <div class="caption clearfix">
+          <div class="pull-left">
+            <b>Picture title</b>
+          </div>
+          <div class="pull-right">
+            <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <img src="assets/img/image-placeholder.png">
+        <div class="caption clearfix">
+          <div class="pull-left">
+            <b>Picture title</b>
+          </div>
+          <div class="pull-right">
+            <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <img src="assets/img/image-placeholder.png">
+        <div class="caption clearfix">
+          <div class="pull-left">
+            <b>Picture title</b>
+          </div>
+          <div class="pull-right">
+            <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="lead">Effect 3</p>
+  <!-- Effect 3 -->
+  <div class="row gallery effect-3">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <a href="#">
+          <img src="assets/img/image-placeholder.png">
+        </a>
+        <div class="caption">
+          <h4>Picture title</h4>
+          <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <img src="assets/img/image-placeholder.png">
+        <div class="caption">
+          <h4>Picture title</h4>
+          <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <img src="assets/img/image-placeholder.png">
+        <div class="caption">
+          <h4>Picture title</h4>
+          <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="lead">Effect 4</p>
+  <!-- Effect 4 -->
+  <div class="row gallery effect-4">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <a href="#">
+          <img src="assets/img/image-placeholder.png">
+        </a>
+        <div class="caption">
+          <h4>Picture title</h4>
+          <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <img src="assets/img/image-placeholder.png">
+        <div class="caption">
+          <h4>Picture title</h4>
+          <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <img src="assets/img/image-placeholder.png">
+        <div class="caption">
+          <h4>Picture title</h4>
+          <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="lead">Effect 5</p>
+  <!-- Effect 5 -->
+  <div class="row gallery effect-5">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <a href="#">
+          <img src="assets/img/image-placeholder.png">
+        </a>
+        <div class="caption clearfix">
+          <div class="pull-left">
+            <b>Picture title</b>
+          </div>
+          <div class="pull-right">
+            <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <img src="assets/img/image-placeholder.png">
+        <div class="caption clearfix">
+          <div class="pull-left">
+            <b>Picture title</b>
+          </div>
+          <div class="pull-right">
+            <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <img src="assets/img/image-placeholder.png">
+        <div class="caption clearfix">
+          <div class="pull-left">
+            <b>Picture title</b>
+          </div>
+          <div class="pull-right">
+            <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="lead">Effect 6</p>
+  <!-- Effect 6 -->
+  <div class="row gallery effect-6">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <a href="#">
+          <img src="assets/img/image-placeholder.png">
+        </a>
+        <div class="caption clearfix">
+          <div class="pull-left">
+            <b>Picture title</b>
+          </div>
+          <div class="pull-right">
+            <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <img src="assets/img/image-placeholder.png">
+        <div class="caption clearfix">
+          <div class="pull-left">
+            <b>Picture title</b>
+          </div>
+          <div class="pull-right">
+            <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="thumbnail">
+        <img src="assets/img/image-placeholder.png">
+        <div class="caption clearfix">
+          <div class="pull-left">
+            <b>Picture title</b>
+          </div>
+          <div class="pull-right">
+            <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="lead">Gallery Carousel</p>
+  <div id="galleryCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+      <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#galleryCarousel" data-slide-to="1"></li>
+      <li data-target="#galleryCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="item active">
+        <!-- Effect 2 -->
+        <div class="row gallery effect-2">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="thumbnail">
+              <a href="#">
+                <img src="assets/img/image-placeholder.png">
+              </a>
+              <div class="caption clearfix">
+                <div class="pull-left">
+                  <b>Picture title</b>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="thumbnail">
+              <img src="assets/img/image-placeholder.png">
+              <div class="caption clearfix">
+                <div class="pull-left">
+                  <b>Picture title</b>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="thumbnail">
+              <img src="assets/img/image-placeholder.png">
+              <div class="caption clearfix">
+                <div class="pull-left">
+                  <b>Picture title</b>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Slide 2 -->
+      <div class="item">
+
+        <!-- Effect 2 -->
+        <div class="row gallery effect-2">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="thumbnail">
+              <a href="#">
+                <img src="assets/img/image-placeholder.png">
+              </a>
+              <div class="caption clearfix">
+                <div class="pull-left">
+                  <b>Picture title</b>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="thumbnail">
+              <img src="assets/img/image-placeholder.png">
+              <div class="caption clearfix">
+                <div class="pull-left">
+                  <b>Picture title</b>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="thumbnail">
+              <img src="assets/img/image-placeholder.png">
+              <div class="caption clearfix">
+                <div class="pull-left">
+                  <b>Picture title</b>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-primary btn-sm">Take a look</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <a class="left carousel-control" href="#galleryCarousel" data-slide="prev">
+      <span class="fa fa-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#galleryCarousel" data-slide="next">
+      <span class="fa fa-next"></span>
+    </a>
+  </div>
+
+  </section>
+
+
+  <!-- Flicker Feed
+  ================================================== -->
+  <section id="flicker">
+    <div class="page-header">
+      <h1>Flickr Badge</h1>
+    </div>
+    <p>Wrap the next flicker badge with your custom params inside <code>.flickr-feed.clearfix</code> </p>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="flickr-feed clearfix">
+          <script src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=52617155@N08"></script>
+        </div>
+      </div>
+    </div>
+
+    <p class="lead">Markup</p>
+
+<pre class="prettyprint linenums">
+&lt;div class="flickr-feed clearfix">
+  &lt;script src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=52617155@N08">
+  &lt;/script>
+&lt;/div>
+</pre>
+    <p class="lead">URL params</p>
+    <code>count=8</code> Nunber of pictures to show
+    <code>size=s</code> Size of pictures
+    <code>user=52617155@N08</code> Flickr User ID (<a href="http://idgettr.com/">http://idgettr.com/</a>)
+  </section>
+
+  <!-- File Upload
+  ================================================== -->
+  <section id="upload">
+    <div class="page-header">
+      <h1>File upload</h1>
+    </div>
+    <p class="lead">Examples</p>
+
+    <h4>File upload widget using input groups</h4>
+    <div class="row">
+      <div class="col-lg-6">
+
+        <div class="fileupload fileupload-new" data-provides="fileupload">
+          <div class="input-group">
+            <div class="uneditable-input form-control col-lg-3">
+              <i class="fa fa-file fileupload-exists"></i>
+              <span class="fileupload-preview"></span>
+            </div>
+                  <span class="input-group-btn">
+                    <span class="btn btn-default btn-file">
+                    <span class="fileupload-new">Select file</span>
+                    <span class="fileupload-exists">Change</span>
+                      <input type="file"  />
+                    </span>
+                    <a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Remove</a>
+                  </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <h4>File upload widget alone</h4>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="fileupload fileupload-new" data-provides="fileupload">
+                  <span class="btn btn-default btn-file">
+                    <span class="fileupload-new">Select file</span>
+                    <span class="fileupload-exists">Change</span>
+                    <input type="file" />
+                  </span>
+          <span class="fileupload-preview"></span>
+          <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">&times;</a>
+        </div>
+      </div>
+    </div>
+
+    <h4>Image upload widgets</h4>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="fileupload fileupload-new" data-provides="fileupload">
+          <div class="fileupload-new thumbnail" style="width: 200px; height: 200px;"><img src="assets/img/image-placeholder.png"/>
+          </div>
+          <div class="fileupload-preview fileupload-exists thumbnail"></div>
+          <div>
+                    <span class="btn btn-file btn-success"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span>
+                      <input type="file" />
+                    </span>
+            <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>Flexible alignment</h4>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="clearfix">
+
+          <div class="fileupload fileupload-new pull-left" data-provides="fileupload">
+            <div class="fileupload-new thumbnail" >
+              <img src="assets/img/image-placeholder-64x64.png" height="64" width="64" />
+            </div>
+            <div class="fileupload-preview fileupload-exists thumbnail"></div>
+                  <span class="btn btn-file btn-info">
+                    <span class="fileupload-new">Select image</span>
+                    <span class="fileupload-exists">Change</span>
+                    <input type="file" />
+                  </span>
+            <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
+          </div>
+
+          <div class="fileupload fileupload-new pull-right" data-provides="fileupload" style="text-align: right">
+                  <span class="btn btn-file btn-info">
+                    <span class="fileupload-new">Select image</span>
+                    <span class="fileupload-exists">Change</span>
+                    <input type="file" />
+                  </span>
+            <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
+            <div class="fileupload-new thumbnail" >
+              <img src="assets/img/image-placeholder-64x64.png" height="64" width="64" />
+            </div>
+            <div class="fileupload-preview fileupload-exists thumbnail"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <p class="lead">Learn more at the Jasny <a  target="_blank" href="http://jasny.github.io/bootstrap/javascript.html#fileupload">website</a></p>
+    <div class="alert alert-danger"><b>Important</b> The file upload markup has been customized to match  Bootstrap 3 classnames</div>
+
+  </section>
+
+
+  <!-- Input Mask
+  ================================================== -->
+  <section id="inputmask">
+
+    <div class="page-header">
+      <h1>Input mask</h1>
+    </div>
+
+    <h2>Example</h2>
+    <p>
+      Input masks can be used to force the user to enter data conform a specific format.
+    </p>
+    <p>
+      Unlike validation, the user can't enter any other key than the ones specified by the mask.
+    </p>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <label>ISBN</label>
+        <input type="text" class="form-control" data-mask="999-99-999-9999-9">
+      </div>
+    </div>
+
+    <pre class="prettyprint linenums">&lt;input type="text" class="form-control" data-mask="999-99-999-9999-9"></pre>
+
+    <p class="lead">Learn more at the Jasny <a  target="_blank" href="http://jasny.github.io/bootstrap/javascript.html#fileupload">website</a></p>
+
+  </section>
+
+  <!-- Google Map
+  ================================================== -->
+  <section id="gmap">
+    <div class="page-header">
+      <h1>Google Maps</h1>
+    </div>
+    <p>Use Google Maps directly from the data attribute</p>
+    <p>Add class <code>.gmap</code>to a DIV element and set a height</p>
+
+    <ul>
+      <li><strong>data-markers:</strong> set addresses separated by <code>;</code></li>
+      <li><strong>data-zoom:</strong> set the map zoom level</li>
+    </ul>
+
+    <div  class="gmap"
+          data-zoom="14"
+          data-markers="Little Lonsdale St, Melbourne, Victoria 8011 Australia; 2 Elizabeth St, Melbourne, Victoria 3000 Australia"
+          style="height: 300px;"></div>
+
+<pre class="prettyprint linenums">
+&lt;div  class="gmap"
+      data-zoom="14"
+      data-markers="Little Lonsdale St, Melbourne, Victoria 8011 Australia; 2 Elizabeth St, Melbourne, Victoria 3000 Australia"
+      style="height: 300px;">
+&lt;/div>
+</pre>
+
+  </section>
+
+
+  <!-- Ribbon
+  ================================================== -->
+  <section id="ribbon">
+    <div class="page-header">
+      <h1>Ribbon </h1>
+    </div>
+    <p>Add a ribbon to any element</p>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+        <div class="thumbnail has-ribbon" data-text="New Item">
+          <img class="zoom" alt="ribbon" src="assets/img/image-placeholder.png"/>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+        <div class="thumbnail has-ribbon has-ribbon-right" data-text="Limited Offer">
+          <img class="zoom" alt="ribbon" src="assets/img/image-placeholder.png"/>
+        </div>
+      </div>
+    </div>
+    <p>Use the <code>data-text</code> to set the ribbon text</p>
+<pre class="prettyprint linenums">
+&lt;div class="thumbnail has-ribbon" data-text="New Item">
+&lt;div class="thumbnail has-ribbon has-ribbon-right" data-text="Limited Offer">
+</pre>
+  </section>
+
+
+  <!-- About
+  ================================================== -->
+  <section id="about">
+    <div class="page-header">
+      <h1>About</h1>
+    </div>
+    <p class="lead">
+      About boxes in landscape by default
+    </p>
+
+    <div class="about">
+      <img alt="about" src="assets/img/image-placeholder.png">
+      <div class="social">
+        <a href="#"><em class="fa fa-facebook"></em></a>
+        <a href="#"><em class="fa fa-twitter"></em></a>
+        <a href="#"><em class="fa fa-google-plus"></em></a>
+      </div>
+      <h4 class="name">Dohn Joe</h4>
+      <p>
+        Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      </p>
+
+      <div class="progress">
+        <div style="width: 100%" class="progress-bar progress-bar-success">
+          HTML
+        </div>
+      </div>
+      <div class="progress">
+        <div style="width: 80%" class="progress-bar progress-bar-info">
+          CSS
+        </div>
+      </div>
+      <div class="progress">
+        <div style="width: 60%" class="progress-bar progress-bar-warning">
+          PHP
+        </div>
+      </div>
+    </div>
+
+<pre class="prettyprint linenums">
+&lt;div class="about" >
+  &lt;img src="people/picture"/>
+  &lt;div class="social">
+      &lt;a href="#">&lt;em class="fa fa-facebook">&lt;/em>&lt;/a>
+      ...
+  &lt;/div>
+&lt;h4 class="name">Dohn Joe&lt;/h4>
+&lt;p>....&lt;/p>
+&lt;/div>
+</pre>
+
+
+    <p class="lead">
+      About boxes in portrait
+    </p>
+
+    <div class="row" >
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="about portrait">
+          <img alt="about" src="assets/img/image-placeholder.png">
+          <div class="social">
+            <a href="#"><em class="fa fa-facebook"></em></a>
+            <a href="#"><em class="fa fa-twitter"></em></a>
+            <a href="#"><em class="fa fa-flickr"></em></a>
+            <a href="#"><em class="fa fa-google-plus"></em></a>
+            <a href="#"><em class="fa fa-rss"></em></a>
+          </div>
+          <div class="caption">
+            <h4 class="name">Dohn Joe</h4>
+            <p>
+              Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="about portrait">
+          <img alt="about" src="assets/img/image-placeholder.png">
+          <div class="social">
+            <a href="#"><em class="fa fa-facebook"></em></a>
+            <a href="#"><em class="fa fa-twitter"></em></a>
+            <a href="#"><em class="fa fa-flickr"></em></a>
+            <a href="#"><em class="fa fa-google-plus"></em></a>
+            <a href="#"><em class="fa fa-rss"></em></a>
+          </div>
+          <div class="caption">
+            <h4 class="name">Dohn Joe</h4>
+            <p>
+              Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="about portrait">
+          <img alt="about" src="assets/img/image-placeholder.png">
+          <div class="social">
+            <a href="#"><em class="fa fa-facebook"></em></a>
+            <a href="#"><em class="fa fa-twitter"></em></a>
+            <a href="#"><em class="fa fa-flickr"></em></a>
+            <a href="#"><em class="fa fa-google-plus"></em></a>
+            <a href="#"><em class="fa fa-rss"></em></a>
+          </div>
+          <div class="caption">
+            <h4 class="name">Dohn Joe</h4>
+            <p>
+              Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<pre class="prettyprint linenums">
+&lt;div class="about portrait" >
+  &lt;img src="people/picture" />
+  &lt;div class="social">
+    &lt;a href="#">&lt;em class="fa fa-facebook">&lt;/em>&lt;/a>
+      ...
+  &lt;/div>
+  &lt;div class="caption">
+    &lt;h4 class="name">Dohn Joe&lt;/h4>
+    &lt;p>...&lt;/p>
+  &lt;/div>
+&lt;/div>
+</pre>
+
+  </section>
+
+  <!-- Twitter
+   ================================================== -->
+  <section id="tweet">
+    <div class="page-header">
+      <h1>Twitter Feed (API v1.1)</h1>
+    </div>
+    <p>
+      Just add a <code>
+      div</code>
+      tag with class <code>
+      .tweet</code>
+    </p>
+<pre class="prettyprint linenums">
+&lt;div class="tweet">&lt;/div>
+</pre>
+
+    <p class="lead">
+      Simple demo
+    </p>
+
+    <div class="row" >
+      <div class="col-lg-6">
+        <div id="tweet1" class="tweet"></div>
+      </div>
+    </div>
+
+    <p>The custom JavaScript will generate the following markup</p>
+<pre class="prettyprint linenums">
+&lt;ul class="tweetList"&gt;
+  &lt;li class="tweet"&gt;
+    &lt;em class="fa fa-twitter fa fa-large"&gt;&lt;/em&gt;
+    &lt;p class="tweetText"&gt;...
+      &lt;br&gt;
+      &lt;small class="tweetTime"&gt;3 days ago&lt;/small&gt;
+    &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li class="tweet"&gt;
+    ...
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+    <p class="lead">
+      Change default icon
+    </p>
+    <p>Via data attribute add custom classes for the em tag used for the icon</p>
+          <pre class="prettyprint linenums">
+&lt;div class="tweet" data-icon="fa fa-twitter-sign fa fa-large text-info">&lt;/div>
+</pre>
+
+    <div class="row" >
+      <div class="col-lg-6">
+        <div id="tweet2" class="tweet" data-icon="fa fa-twitter-sign fa fa-large text-info"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Datepicker
+  ================================================== -->
+  <section id="datepicker">
+    <div class="page-header">
+      <h1>Datepicker</h1>
+    </div>
+
+    <p>Add class <code>.date</code>to your input</p>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group date" id="dp-input1" data-date="01-01-2013" data-date-format="dd-mm-yyyy">
+          <input class="form-control" size="16" type="text">
+          <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+        </div>
+        <br />
+        <div class="input-group date" id="dp-input2" data-date="01-01-2013" data-date-format="dd-mm-yyyy">
+          <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+          <input class="form-control" size="16" type="text">
+        </div>
+      </div>
+    </div>
+<pre class="prettyprint linenums">
+&lt;div class="input-group date" id="dp-input1" data-date="01-01-2013" data-date-format="dd-mm-yyyy">
+  &lt;input class="span2" size="16" type="text">
+  &lt;span class="input-group-addon">&lt;i class="fa fa-calendar">&lt;/i>&lt;/span>
+&lt;/div>
+</pre>
+          <pre class="prettyprint linenums">
+$('#dp-input1').datepicker();
+</pre>
+
+    <p class="lead">Learn more about Datepicker <a  target="_blank" href="http://www.eyecon.ro/bootstrap-datepicker/">here</a></p>
+
+  </section>
+
+  <!-- Colorpicker
+  ================================================== -->
+  <section id="colorpicker">
+    <div class="page-header">
+      <h1>Colorpicker</h1>
+    </div>
+
+    <p class="bolder"> Attached to a field with hex format specified via options.</p>
+    <div class="row">
+      <div class="col-lg-6">
+        <input type="text" class="form-control" value="#8fff00" id="cp1" >
+      </div>
+    </div>
+<pre class="prettyprint linenums">
+&lt;input type="text" class="form-control" value="#8fff00" id="cp1" >
+</pre>
+
+    <p class="bolder">Attachet to a field with the rgba format specified via data tag.</p>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <input type="text" class="form-control" value="rgb(0,194,255,0.78)" id="cp2" data-color-format="rgba" >
+      </div>
+    </div>
+<pre class="prettyprint linenums">
+&lt;input type="text" class="form-control" value="rgb(0,194,255,0.78)" id="cp2" data-color-format="rgba" >
+</pre>
+
+
+    <p class="bolder">As component.</p>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group color" data-color="rgb(255, 146, 180)" data-color-format="rgb" id="cp3">
+          <input type="text" class="form-control" value="" readonly="readonly" />
+                <span class="input-group-addon">
+                  <i style="background-color: rgb(255, 146, 180)"></i>
+                </span>
+        </div>
+      </div>
+    </div>
+
+<pre class="prettyprint linenums">
+&lt;div class="input-group color" data-color="rgb(255, 146, 180)" data-color-format="rgb" id="cp3">
+  &lt;input type="text" class="form-control" value="" readonly="readonly" />
+  &lt;span class="input-group-addon">&lt;i style="background-color: rgb(255, 146, 180)">&lt;/i>&lt;/span>
+&lt;/div>
+</pre>
+
+
+    <p class="bolder">Using events to work with the color.</p>
+    <a href="#" class="btn btn-default btn-sm" id="cp4" data-color-format="hex" data-color="rgb(255, 255, 255)">Change background color</a>
+    <br /><br />
+<pre class="prettyprint linenums">
+&lt;a href="#" class="btn btn-default btn-sm" id="cp4" data-color-format="hex" data-color="rgb(255, 255, 255)">Change...&lt;/a>
+</pre>
+
+    <p class="lead">Learn more about Colorpicker <a target="_blank" href="http://www.eyecon.ro/bootstrap-colorpicker/">here</a></p>
+  </section>
+
+
+  <!-- Price Table
+  ================================================== -->
+  <section id="pricetable">
+    <div class="page-header">
+      <h1>Price Table</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-4">
+        <br>
+        <ul class="text-center well list-unstyled">
+          <li>
+            <p>BASIC</p>
+            <h1>$12</h1>
+            <p class="muted"><i>per month</i></p>
+          </li>
+          <li><p>10GB Storage</p></li>
+          <li><p>100GB Bandwidth</p></li>
+          <li><p>10 domains</p></li>
+          <li><p>20 email accounts</p></li>
+          <li><p>5 Database</p></li>
+          <li><p>No support</p></li>
+          <li><a href="#" class="btn btn-primary btn-block">Choose Plan</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-4">
+        <!-- No br for featured plans -->
+        <ul class="text-center well list-unstyled">
+          <li>
+            <p>PROFESSIONAL</p>
+            <h1>$22</h1>
+            <p class="muted"><i>per month</i></p>
+            <br>
+          </li>
+          <li><p>100GB Storage</p></li>
+          <li><p>500GB Bandwidth</p></li>
+          <li><p>30 domains</p></li>
+          <li><p>40 email accounts</p></li>
+          <li><p>50 Database</p></li>
+          <li><p>7x24 support</p></li>
+          <li>
+            <!-- A br and btn-large here to push bottom -->
+            <br>
+            <a href="#" class="btn btn-primary btn-block btn-large">Choose Plan</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4">
+        <br>
+        <ul class="text-center well list-unstyled">
+          <li>
+            <p>PREMIUM</p>
+            <h1>$50</h1>
+            <p class="muted"><i>per month</i></p>
+          </li>
+          <li><p>500GB Storage</p></li>
+          <li><p>Unlimited Bandwidth</p></li>
+          <li><p>50 domains</p></li>
+          <li><p>50 email accounts</p></li>
+          <li><p>100 Database</p></li>
+          <li><p>7x24 support</p></li>
+          <li><a href="#" class="btn btn-primary btn-block">Choose Plan</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Font Awesome
+  ================================================== -->
+  <section id="awesome">
+    <div class="page-header">
+      <h1>Font Awesome 4</h1>
+    </div>
+
+    <h2>Usage</h2>
+
+    <div class="well" style="font-size: 24px; line-height: 1.5em;">
+      <p><em class="fa fa-camera-retro"></em>       .fa.fa-camera-retro</p>
+      <p><em class="fa fa-camera-retro fa-lg"></em> .fa.fa-camera-retro.fa-lg</p>
+      <p><em class="fa fa-camera-retro fa-2x"></em> .fa.fa-camera-retro.fa-2x</p>
+      <p><em class="fa fa-camera-retro fa-3x"></em> .fa.fa-camera-retro.fa-3x</p>
+      <p><em class="fa fa-camera-retro fa-4x"></em> .fa.fa-camera-retro.fa-4x</p>
+    </div>
+
+<pre class="prettyprint linenums">
+&lt;em class=&quot;fa fa-camera-retro&quot;&gt;&lt;/em&gt;
+&lt;em class=&quot;fa fa-camera-retro fa-lg&quot;&gt;&lt;/em&gt;
+&lt;em class=&quot;fa fa-camera-retro fa-2x&quot;&gt;&lt;/em&gt;
+&lt;em class=&quot;fa fa-camera-retro fa-3x&quot;&gt;&lt;/em&gt;
+&lt;em class=&quot;fa fa-camera-retro fa-4x&quot;&gt;&lt;/em&gt;
+</pre>
+
+    <p class="lead">Learn more about FontAwesome <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">here</a></p>
+  </section>
+
+  <!-- Drops
+  ================================================== -->
+  <section id="drops">
+    <div class="page-header">
+      <h1>Glossy drops</h1>
+    </div>
+
+    <div  style="background-color: #4d576e; padding: 20px;" class="clearfix">
+      <div class="pull-left drop"></div>
+      <div class="pull-left drop drop-blue"></div>
+      <div class="pull-left drop drop-green"></div>
+      <div class="pull-left drop drop-orange"></div>
+      <div class="pull-left drop drop-pink"></div>
+      <div class="pull-left drop drop-purple"></div>
+    </div>
+          <pre class="prettyprint linenums">
+&lt;div class="drop">&lt;/div>
+&lt;div class="drop drop-blue">&lt;/div>
+&lt;div class="drop drop-green">&lt;/div>
+&lt;div class="drop drop-orange">&lt;/div>
+&lt;div class="drop drop-pink">&lt;/div>
+&lt;div class="drop drop-purple">&lt;/div>
+</pre>
+
+
+  </div> <!-- main /col9 -->
+  </div> <!-- main /row -->
+{% endblock content %}

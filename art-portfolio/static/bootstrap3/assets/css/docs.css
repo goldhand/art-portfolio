@@ -1,0 +1,113 @@
+
+/* index */
+.masthead {
+  background-color: #4d576e;
+  color: #fff; padding-top: 80px;
+}
+
+.masthead h1 { font-size: 100px;}
+.masthead .lead { color: #9c9c9c; font-size: 30px; }
+.masthead ul a { color: #fff; font-size: 14px; }
+
+#go-fire:hover,  #go-fire:focus  { background-color: #F16022; } 
+#go-earth:hover, #go-earth:focus { background-color: #84b231; } 
+#go-water:hover, #go-water:focus { background-color: #5e95cc; } 
+#go-wind:hover,  #go-wind:focus  { background-color: #bababa; } 
+#go-love:hover,  #go-love:focus  { background-color: #c63d4e; } 
+
+footer {
+  border-top: 1px solid #ddd;
+  padding: 30px; margin-top: 50px;
+}  
+
+/* Small devices (tablets,  and up) */
+@media (min-width: 768px) { .masthead { padding-top: 150px;}  }
+
+
+/* bootstrap */
+.row > [class*="col-"] {
+  margin-bottom: 40px;
+}
+
+.carousel .row > [class*="col-"] {
+  margin-bottom: 0;
+}
+.navbar-demo .navbar-container {
+  position: relative;
+  min-height: 100px;
+  z-index: 100;
+}
+.navbar-demo .navbar.navbar-fixed-top,
+.navbar-demo .navbar.navbar-fixed-bottom {
+  position: absolute;
+  top: 50px;
+  z-index: 0;
+}
+.navbar-demo .navbar.navbar-fixed-top .container,
+.navbar-demo .navbar.navbar-fixed-bottom .container {
+  max-width: 90%;
+}
+
+.btn-group { margin-bottom: 10px}
+.form-inline select, 
+.form-inline input[type="text"], 
+.form-inline input[type="password"] {
+  width: 180px;
+}
+.input-group { margin-bottom: 10px;}
+.pagination { margin-top :0;}
+
+
+.bs-header { 
+    background-color: #4d576e;
+    padding: 70px 30px 50px 30px; color: #fff;  
+}
+.bs-header h1 { font-size: 80px; font-weight: bold;} 
+
+@media( max-width: 640px ) {
+  .buttons-table th:nth-child(4),
+  .buttons-table th:nth-child(5),
+  .buttons-table th:nth-child(6),
+  .buttons-table td:nth-child(4),
+  .buttons-table td:nth-child(5),
+  .buttons-table td:nth-child(6) {
+    display: none;
+  }
+}
+
+/* extras */
+
+.menu-list { margin-top: 30px; } 
+.menu-list.affix {
+  position: static;
+}
+
+.page-header { padding-top: 50px;} 
+
+#css-switcher {
+  margin: 0 auto; display: inline-block; *display: inline; zoom: 1;  
+}
+
+/* Small devices (tablets,  and up) */
+@media (min-width: 768px) { 
+  .menu-list.affix {
+    position: fixed;
+    top: 0;
+    width: 160px;
+    margin-top: 90px;
+  }
+ }
+
+/* Medium devices (desktops,  and up) */
+@media (min-width: 992px) {
+  .menu-list.affix {
+    width: 212px;
+  }
+}
+
+/* Large devices (large desktops,  and up) */
+@media (min-width: 1200px) { 
+  .menu-list.affix {
+    width: 260px;
+  }
+}    

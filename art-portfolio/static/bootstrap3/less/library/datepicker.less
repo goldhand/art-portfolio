@@ -1,0 +1,66 @@
+
+// Skin for DatePicker
+// ------------------------------------
+
+.input-group.date {
+  .input-group-addon:hover {
+    cursor: pointer;
+  }
+}
+
+.datepicker {
+  top: 0;
+  left: 0;
+  padding: 4px 8px;
+  margin-top: 1px;
+  border-radius: @border-radius-base;
+  
+  th.switch {
+    border-bottom: 1px solid @link-color;
+    text-align: center;
+  }
+  
+  .day.new {
+    color: lighten(@text-color,30%);
+  }
+  
+  .prev,
+  .next {
+    font-size: @font-size-large;
+  }
+  
+  .prev,
+  .next,
+  .switch,
+  .month,
+  .day {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  .day,
+  .prev,
+  .next {
+    text-align: center;
+    &.active,
+    &:hover {
+      color: #fff;
+      border-radius: @border-radius-base;
+      background-color: @link-color;
+    }    
+  }
+  
+  .month,
+  .year {
+    padding: 0 10px;
+    margin: 10px 0;
+    
+    &.active,
+    &:hover {
+      color: #fff;
+      border-radius: @border-radius-base;
+      background-color: @link-color;
+    }
+  }
+}

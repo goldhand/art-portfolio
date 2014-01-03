@@ -1,0 +1,25 @@
+// Flickr
+// --------------------------------------------------
+
+
+.flickr-feed {
+    a {
+        float: left;
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        border: 5px solid #fff;
+        .transition(border-color .2s ease-in-out);
+        > img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        &:hover{
+            border-color: @link-color;
+            .transition(border-color .2s ease-in-out);
+        }
+    }
+}

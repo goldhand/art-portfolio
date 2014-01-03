@@ -1,0 +1,148 @@
+
+// Effect Gallery
+// --------------------------------------------------
+
+
+.gallery {
+
+    .thumbnail {
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        border: 0;
+        margin-bottom: @line-height-computed;
+        .translate3d(0; 0; 0);
+        .perspective(1000);
+        .backface-visibility(hidden);
+
+        > img,
+        > a > img {
+            position: relative;
+            max-width: 100%;
+            height: auto;
+            .transition(all .3s ease-in-out);
+        }
+    }
+    
+    .caption {
+        position: absolute;
+        background-color: #2c3f52;
+        color: #fff;
+        .transition(all .3s ease-in-out);
+
+        > h2, > h3, > h4 {
+            margin: 0;
+            font-weight: bold;
+        }
+    }
+}
+
+.gallery {
+
+    &.effect-1 {
+        
+        .caption {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            margin-bottom: -60px;
+        }
+        
+        .thumbnail:hover {
+            .caption {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.effect-2 {
+        
+        .effect-1;
+
+        .thumbnail:hover {
+            > img,
+            > a > img {
+                margin-top: -60px;
+                padding-bottom: 60px;
+            }
+        }
+    }
+
+    &.effect-3 {
+        
+        .caption {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            margin-left: -50%;
+
+            > a, > .btn {
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+        
+        .thumbnail:hover {
+            .caption {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &.effect-4 {
+        
+      .effect-3;
+
+        .thumbnail:hover {
+            > img,
+            > a > img {
+                .transform(scale(0.9) translateX(30%))
+            }
+        }      
+    }
+
+    &.effect-5 {
+        
+        .caption {
+            padding: 10px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .thumbnail{
+            > img,
+            > a > img {
+                z-index: 2;
+            }
+        }  
+
+        .thumbnail:hover {
+            > img,
+            > a > img {
+                .transform(scale(0.5))
+            }
+        }  
+    }
+
+    &.effect-6 {
+        
+        .effect-5;
+
+        .caption {
+            .transform(scale(0.5));
+            opacity: 0;
+        }
+        .thumbnail:hover {
+            .caption {
+                .transform(scale(1));
+                opacity: 1;
+            }
+        }  
+    }
+
+}

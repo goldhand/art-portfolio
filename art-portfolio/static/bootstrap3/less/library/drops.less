@@ -1,0 +1,76 @@
+//
+// Glossy Drops
+// http://codepen.io/geedmo/pen/FicLl
+// --------------------------------------------------
+
+.drop {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  //background-color: #ace3ff;
+  margin: 35px 10px 10px; /* some space for top */
+  .box-shadow(0 0 0 rgba(0,0,0,0));
+  .transition(box-shadow .6s ease-out);
+  &:hover {
+    .box-shadow(0 6px 0 rgba(0,0,0,0.2));
+    .transition(box-shadow .6s ease-out);
+  }
+}
+
+.drop:before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: -4px;
+  left: 18px;
+  //background-color: #ace3ff;
+  border-radius: 6px;
+  -webkit-transform: scaleY(1.4) rotate(45deg);
+     -moz-transform: scaleY(1.4) rotate(45deg);
+      -ms-transform: scaleY(1.4) rotate(45deg);
+       -o-transform: scaleY(1.4) rotate(45deg);
+          transform: scaleY(1.4) rotate(45deg);
+  }
+
+.drop:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  border-radius: 50%;
+  //background-color: #ace3ff;
+  margin: 100px auto;
+  top: -50px; left: 25px;
+  //.box-shadow(~"5px 12px 4px #ace3ff, -5px 11px 4px #ace3ff, 0px 14px 4px #4d576e");
+  .rotate(35deg);
+}
+
+/*
+@themeBlue:             #72A9E5;
+@themeOrange:           #FFAD99;
+@themeGreen:            #83bb47; 
+@themePurple:           #c3b4ff;
+@themePink:             #ed98a9;
+@dropDefaulColor:       #ace3ff;
+@dropGlossColor:        #4d576e
+*/
+
+.dropColor(@color) {
+  background-color: @color;
+  &:before {
+    background-color: @color;
+  }
+  &:after {
+    background-color: @color;
+    .box-shadow(~"5px 12px 4px @{color}, -5px 11px 4px @{color}, 0px 14px 4px @{dropGlossColor}");
+  }
+}
+
+.drop { .dropColor(@dropDefaulColor); }
+.drop-blue { .dropColor(@themeBlue); }
+.drop-orange { .dropColor(@themeOrange); }
+.drop-green { .dropColor(@themeGreen); }
+.drop-purple { .dropColor(@themePurple); }
+.drop-pink { .dropColor(@themePink); } 

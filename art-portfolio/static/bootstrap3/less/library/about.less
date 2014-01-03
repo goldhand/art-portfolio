@@ -1,0 +1,89 @@
+//
+// About
+// --------------------------------------------------
+
+
+
+.about {
+  
+  margin: @line-height-computed 0;
+  position: relative;
+  
+  .name {
+    margin-top: 0; 
+  }
+  
+  > img {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+  }
+    
+  .social {
+    position: absolute;
+    bottom: 30px;
+    background-color: fade(#000, 50%); 
+    padding: 4px 10px;
+    .box-shadow(1px 1px 2px rgba(0,0,0,0.2));
+    
+    a {
+  
+      > em {
+        display: inline-block;
+        width: @line-height-computed;
+        height: @line-height-computed;
+        padding: 3px;
+        border-radius: 50%;
+        text-align: center;
+        color: #fff;
+        .transition(all .4s ease);
+      }
+
+      &:hover > em {
+        background: @link-color;
+        text-decoration: none;
+        outline: none;
+        .transition(all .2s ease)
+      }
+    }
+  }
+  
+  &:after,
+  &:before {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.about.portrait {
+  
+  text-align: center;
+  
+  > img {
+    float: none;
+    margin-right: 0;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+    
+  .caption {
+    text-align: left;
+    padding: 20px 0 0;
+  }
+  
+  .social{
+    bottom: 0;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    padding: 4px 0;  
+  }
+
+}
+
+

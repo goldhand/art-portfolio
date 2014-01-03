@@ -1,0 +1,265 @@
+
+
+// CHECKBOX AND RADIOS
+// ------------------------
+
+.checkbox,
+.radio,
+.input-group-addon.has-checkbox,
+.input-group-addon.has-radio {
+  
+  position: relative;
+  .transition(color linear 0.2s);
+  overflow: hidden;
+
+  &.checked .ctrl-overlay {
+    content: "\f00c";
+    background-color: @link-color;
+    .transition(background-color linear 0.2s);
+  }
+
+  &.disabled .ctrl-overlay {
+    background-color: @input-border;
+  }
+
+  &:hover {
+    color: @link-color;
+    .transition(color linear 0.2s);
+  };
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    .opacity(0);
+    outline: none !important;
+  }
+}
+
+.form-inline {
+  .checkbox,
+  .radio {
+    > label > input[type="checkbox"],
+    > label > input[type="radio"] {
+      margin-top: 0;  
+      margin-right: 6px;
+    }    
+  }
+}
+
+.form-horizontal {
+  .checkbox,
+  .radio {
+    padding-top: 0;
+  }
+}
+
+.checkbox-inline,
+.radio-inline {
+  margin-top: 0;
+  > label > input[type="checkbox"],
+  > label > input[type="radio"] {
+      
+  }
+}
+
+.input-group-addon.has-checkbox,
+.input-group-addon.has-radio {
+  .ctrl-overlay {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: @input-border;
+    background-color: transparent;
+    width: 14px;
+    height: 19px;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: none;
+  }
+  &.checked .ctrl-overlay {
+    color: @link-color;
+    background-color: transparent;
+  }
+}
+
+
+
+.checkbox,
+.radio {
+  padding-left: 30px;
+}
+
+.radio {
+  .ctrl-overlay {
+    border-radius: 100px;
+  }
+}
+
+.ctrl-overlay {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 21px;
+  background-color: @input-border;
+  border-radius: 3px;
+  color: #fff;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  //text-indent: 1px;
+  text-indent: 0\9;
+  .transition(background-color linear 0.2s);
+}
+
+// fixes for addon
+.input-group-addon {
+  .ctrl-overlay {
+
+  }
+}
+
+// TOGGLE
+// ------------------------
+
+
+.toggle {
+  position: relative;
+  width: 70px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 500px;
+  overflow: hidden;
+  background-color: @input-border;
+  color: #fff;
+  cursor: pointer;
+  .transition(background-color .3s ease-out);
+  input {
+    .opacity(0);
+    outline: none;
+    display: none;
+  }
+
+  > em,
+  > em[class^="icon-"] {
+    position: absolute;
+    font-size: 24px;
+    line-height: 30px;
+    right: auto; left: 0;
+    margin-left: 0;
+    padding: 0;
+    margin: 0;
+    .transition(margin-left .3s ease-out);
+  }
+
+  .toggle-on,
+  .toggle-off {
+    width: 50px;
+    height: 30px;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .toggle-off {
+    display: block;
+  }
+  .toggle-on {
+    display: none;
+  }
+
+
+  &.on {
+    background-color: @link-color;
+    .transition(background-color .3s ease-out);
+    > em {
+      margin-left: 40px;
+      .transition(margin-left .3s ease-out);
+    }
+    .toggle-on {
+      display: block;
+      margin-left: 0;
+    }
+    .toggle-off {
+      display: none;
+    }
+  }
+  &.disabled {
+    background-color: @input-border;
+  }
+
+}
+
+.toggle.toggle-square {
+  border-radius: 6px;
+}
+
+.toggle-success.on {
+    background-color: @brand-success;
+}
+.toggle-warning.on {
+    background-color: @brand-warning;
+}
+.toggle-info.on {
+    background-color: @brand-info;
+}
+
+.toggle-danger.on {
+    background-color: @brand-danger;
+}
+
+
+// DROPDOWN SELECT
+// ------------------------
+
+
+.dropdown-toggle.dropdown-select {
+  width: 100%;
+  text-align: left !important;
+  float: none;
+  .caret {
+    position: absolute;
+    right: 10px;
+    top: 45%;
+  }
+  + .dropdown-menu {
+    width: 100%;
+  }
+
+}
+
+// INPUT ICONS
+// ------------------------
+
+
+.input-group.input-icon,
+.input-group.input-icon.input-focused {
+  .form-control {
+    outline: none !important;
+  }
+  > .input-group-addon, 
+  > .input-group-addon:hover {
+    border-width: 2px;
+    background-color: #fff !important;
+    color: @input-border !important;
+    .transition(border-color ease-in-out .15s);
+  }
+
+  .input-group-addon + .form-control {
+    border-left-width: 0;
+    border-right-width: 0;
+  }
+  > .form-control:first-child {
+    border-right-width: 0;
+  }
+  > .form-control:last-child {
+    border-right-width: 2px;
+  }
+
+}
+

@@ -29,5 +29,7 @@ urlpatterns = patterns('',
     url(r'^avatar/', include('avatar.urls')),
 
     # Your stuff: custom urls go here
+    url(r'^api/', include('apiroot.urls')),
+    url(r'^gallery/', include('imagestore.urls', namespace='imagestore')),
 
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

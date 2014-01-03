@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dropper 3 - Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Dropper Documentation</h1>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 bs-docs-sidebar">
+        <div class="list-group menu-list">
+          <a class="list-group-item" href="#general"><i class="fa fa-angle-right"></i> General</a>
+          <a class="list-group-item" href="#structure"><i class="fa fa-angle-right"></i> Structure</a>
+          <a class="list-group-item" href="#usage"><i class="fa fa-angle-right"></i> Usage</a>
+          <a class="list-group-item" href="#less"><i class="fa fa-angle-right"></i> LESS</a>
+          <a class="list-group-item" href="#plugins"><i class="fa fa-angle-right"></i> Plugins</a>
+          <a class="list-group-item" href="#twitterapi"><i class="fa fa-angle-right"></i> Twitter Api</a>    
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-9">
+
+
+        <!-- General
+        ================================================== -->
+        <section id="general">
+          <div class="page-header">
+            <h1>1. General</h1>
+          </div>
+        
+            <p>Dropper is a skin for Bootstrap, wich means that can be used with any site built with the Bootstrap framework. With easy installation and customization thanks to the LESS files that are included. LESS is a tool to quickly declare CSS rules and after compile the .less files, get the real .css file ready to include in your site. Dropper has many improvements to the original Bootstrap styles based on latest CSS3 functionalities. </p>
+            
+            <p>This page cover the skin documentation for Bootstrap version 3. The files structure and components are very similar to Bootstrap 2 but some differences due to the changes made in the new version of Bootstrap.<br>If you never used Bootstrap before, I suggest to start learnig from its great documentation at <a href="http://getbootstrap.com">getbootstrap.com</a>.</p>
+        </section>
+
+
+
+        <!-- File structure
+        ================================================== -->
+        <section id="structure">
+          <div class="page-header">
+            <h1>2. File structure</h1>
+          </div>
+          <p class="lead">Within the download you'll find the following file structure and contents</p>
+          <p>Once downloaded, unzip the compressed zip file to see the structure. You'll see something like this:</p>
+<pre class="prettyprint">
+  dropper/
+  ├── assets/
+  │   ├── css/
+  │   │   ├── bootstrap.[theme].min.css
+  │   │   └── bootstrap.min.css
+  │   ├── font/
+  │   ├── img/
+  │   └── js/
+  │       ├── jquery.js  
+  │       ├── bootstrap.min.js
+  │       ├── bootstrap.js  
+  │       ├── dropper.input.js  
+  │       ├── respond.min.js  
+  │       ├── jquery.gmap.min.js
+  │       └── application.js
+  ├── less/
+  │   └── *.less
+  └── *.html 
+</pre>
+          <p>Each theme is a bootstrap file named with the theme name and the styles and rules for that theme. There is also the unminified version for each css file <code>boostrap.[theme].css</code></p> 
+          
+          <p>bootstrap.min.css is the default theme used in demo, which is <code>blue</code></p>
+
+          <p class="lead">Javascript</p>
+          <p>The following explain the customized files included in the template</p>
+          <dl>
+            <dt>bootstrap.js/bootstrap.min.js</dt>
+            <dd>This file include the main Javascript required for the framework plus the code for the plugins included</dd>
+            <dt>dropper.input.js</dt>
+            <dd>This file includes the necessary Javascript (jQuery) required to create all custom UI elements, like radio, checkbox and dropdown selects. If you dont want to use the extended ui just remove this files (or dont include it) from your project.</dd>
+            <dt>application.js</dt>
+            <dd>This files contains Javascript for the demo pages plus other customization. You should grab the necessary code from this file depending of the necessity of your project.</dd>
+          </dl>
+          </section>
+
+
+
+        <!-- Usage
+        ================================================== -->
+        <section id="usage">
+          <div class="page-header">
+            <h1>3. Usage</h1>
+          </div>
+          
+          <h2>Installation</h2>
+          <p class="lead">Replace style</p>
+            <ul>
+              <li>Go to css/ folder</li>
+              <li>Copy the css file of your choosen theme</li>
+              <li>Paste and replace the file into your style folder of your bootstrap based site.</li>
+            </ul>
+            <p class="lead">New installation</p>
+             <ul>
+              <li>Go to css/ folder</li>
+              <li>Copy the css file of your choosen theme</li>
+              <li>Paste it into your style folder and rename it to bootstrap.min.css.</li>
+              <li>Link to the file in all your pages with the next code (add it between the <code>&lt;head&gt;</code>):<br /><br />
+<pre class="prettyprint linenums">
+&lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;
+</pre>
+              </li>
+              <li>Make sure to fix the path to the stylesheet if your project uses some different.</li>
+            </ul>
+           <p class="lead">Plugin installation</p>
+             <ul>
+               <li>Just copy the <code>bootstrap.min.js</code> to your JavaScript folder</li>
+               <li>Include at the bottom of your pages as follows: <br>
+<pre class="prettyprint linenums">
+&lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+</pre>
+               </li>
+               <li>Make sure to fix the path to the script if your project uses some different.</li>
+             </ul>
+                  
+          <p class="lead">Font installation</p>
+          <p>If you want to include the font used in demo pages, add the following code between the  <code>&lt;head&gt;</code> of your pages</p>
+<pre class="prettyprint linenums">
+&lt;link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'&gt;
+</pre>
+         
+          <p>With this steps done, you are ready to run your site with the a new Bootstrap style. Hope you Enjoy It! <code>:)</code></p>
+
+    
+
+        </section>
+
+
+        <!-- LESS
+        ================================================== -->
+        <section id="less">
+          <div class="page-header">
+            <h1>4. LESS</h1>
+          </div>
+          
+          <h2>New LESS files</h2>
+          
+          <p>You can find all new components styles in this .less files under the <code>/less/library</code> folder</p>
+            <ul>
+              <li><code>testimonial.less</code></li>
+              <li><code>about.less</code></li>
+              <li><code>tweet.less</code></li>
+              <li><code>datepicker.less</code></li>
+              <li><code>colorpicker.less</code></li>
+              <li><code>ribbon.less</code></li>
+              <li><code>gallery.less</code></li>
+              <li><code>fileupload.less</code></li>
+              <li><code>price.less</code></li>
+              <li><code>flex-video.less</code></li>
+              <li><code>drops.less</code></li>
+              <li><code>flickr-feed.less</code></li>
+              <li><code>valign.less</code></li>            
+            </ul>
+
+            <br>
+
+            <p><b>For LESS developers</b></p>
+            <p>Every theme color is based on the value of the variable <code>@link-color</code>. Customize it to use your desired color.</p>
+        </section>
+
+
+        <!-- Plugins
+        ================================================== -->
+        <section id="plugins">
+          <div class="page-header">
+            <h1>5. Plugins</h1>
+          </div>
+          
+          <h2>Plugins Included</h2>
+          
+           <p>All plugins included inside the <a href="assets/js/bootstrap.min.js"><code>bootstrap.min.js</code></a> file for ease use.</p>
+           <ul>
+            <li><strong>Twitter script API v1.1 <a href="https://github.com/abraham/twitteroauth">Thanks to Abraham Williams</a></strong></li>
+            <li><strong><a href="http://www.eyecon.ro/bootstrap-datepicker/">DatePicker</a></strong></li>
+            <li><strong><a href="http://www.eyecon.ro/bootstrap-colorpicker/">ColorPicker</a></strong></li>
+            <li><strong><a href="http://www.gethifi.com/blog/a-jquery-flickr-feed-plugin">Flickr feed</a></strong></li>
+            <li><strong><a href="http://jasny.github.com/bootstrap/javascript.html#fileupload">Fileupload</a></strong></li>
+            <li><strong><a href="http://jasny.github.com/bootstrap/javascript.html#inputmask">InputMask</a></strong></li>
+            <li><strong><a href="https://github.com/marioestrada/jQuery-gMap">Google Maps</a></strong></li>
+           </ul>
+         </section>
+         <section id="twitterapi">
+
+          <div class="page-header">
+            <h1>6. Configuring the Twitter API v1.1</h1>
+          </div>
+
+          <p>Twitter widget is build on Twitter API 1.1. For the new Twitter API you need to have API keys (similar to Facebook). To get the access keys you need to sign in and create an application on the <a href="https://dev.twitter.com/">Twitter Developer Site</a>. Once your application is created Twitter will generate your access keys and tokens.</p>
+          <p>The following process requires a Twitter accound. If you don’t already have a Twitter account, you can sign up at the <a href="http://twitter.com">Twitter</a> home page to create one.</p>
+          <ul>
+            <li>First you need to go to the Twitter Developer Site. Go to <a href="https://dev.twitter.com/">https://dev.twitter.com/</a></li>
+            <li>Login with your Twitter account and go to My Applications.</li>
+            <li>From there click on the “Create a new application” button (optionally go to this <a href="http://twitter.com/apps/new">new application link</a>.</li>
+            <li>Fill the form with the information required.</li>
+
+            <li>Once you’re done, a new page will be displayed, and from there you’ll need the following</li>
+            <ul>
+            <li>Consumer Key</li>
+            <li>Consumer Secret</li>
+            <li>Access Token</li>
+            <li>Access Token Secret</li>
+            </ul>
+            <li>Now go the folder <code>assets/php/</code> and open the file <code>twitter.config.php</code> and fill in with the information obtained before</li>
+          </ul>
+
+          <div class="alert alert-danger">
+            <p><strong>Important</strong> Twitter API v1.1 requires <b>PHP</b> so, in order to work you need to run your site from a local or web server. Otherwise, PHP files will not be processed.</p>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+  </div>
+
+
+    
+  <div style="position: fixed; bottom: 5%; right: 5%;">
+    <a href="#" class="btn btn-primary"><i class="fa fa-chevron-up"></i></a>
+  </div>
+    
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+
+      <div class="container">
+        <p>Dropper skin for <a href="http://getbootstrap.com/">Bootstrap</a> Powered by CSS3.</p>
+        <p>Geedmo 2013 &copy; All rights reserved. </p>
+      </div>
+    </footer>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+
+
+  </body>
+</html>
