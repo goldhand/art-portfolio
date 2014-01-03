@@ -61,7 +61,7 @@
             {% thumbnail image.image "800x800" as full_im %}
                 <img class="preview" {% if image.title %} alt="{{ image.title }}" {% endif %} src="{{ full_im.url }}">
             {% endthumbnail %}
-        <img class="preview" src="{{ MEDIA_URL }}{{ image.image }}">
+        <img class="preview" src="{{ image.get_api_url }}">
         </div>
 {% endblock content %}
 

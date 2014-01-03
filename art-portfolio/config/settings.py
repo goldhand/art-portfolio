@@ -48,10 +48,10 @@ class Common(Configuration):
         'south',  # Database migration helpers:
         'crispy_forms',  # Form layouts
         'avatar',  # for user avatars
-	'imagestore',
-	'sorl.thumbnail',
-	'tagging',
-	'rest_framework',
+        'imagestore',
+        'sorl.thumbnail',
+        'tagging',
+        'rest_framework',
     )
 
     # Apps specific for this project go here.
@@ -275,6 +275,7 @@ class Common(Configuration):
 
 
     ########## Your common stuff: Below this line define 3rd party libary settings
+    IMAGESTORE_LOAD_CSS = True
 
 
 class Local(Common):
