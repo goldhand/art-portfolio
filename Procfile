@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath="$PWD/art-portfolio" config.wsgi:application
