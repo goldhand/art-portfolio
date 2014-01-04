@@ -10,15 +10,6 @@
     {% endif %}
 {% endblock %}
 
-{% block imagestore-breadcrumb %}
-    <li>
-        {% if view_user %}
-            {% trans "Albums for user" %} {{ view_user }}
-        {% else %}
-            {% trans "All albums" %}
-        {% endif %}
-    </li>
-{% endblock %}
 
 {% block imagestore-info %}
     {% if view_user and IMAGESTORE_SHOW_USER %}
@@ -39,31 +30,49 @@
         {% trans "All albums" %}
     {% endif %}</h1>
     {% include "imagestore/pagination.html" %}
-    <div class='album-list'>
+    <div class='album-list row gallery effect-1'>
         {% for album in album_list %}
-            {% if album.get_head  or album.user == request.user %}
+        {% if forloop.counter0|divisibleby:3 %}
+    </div>
+            <div class="album-list row gallery effect-1">
+        {% endif %}
+        {% if album.get_head  or album.user == request.user %}
             <div class='album'>
                 <div class='album-head'>
-                    <a href="{{ album.get_absolute_url }}">
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <div class="thumbnail">               
                     {% if album.get_head %}
-                        {% thumbnail album.get_head.image "150x150" crop='center' as album_head %}
+                    
+                        {% thumbnail album.get_head.image "400x300" crop='center' as album_head %}
                             <img class="preview" {% if album.name %} alt="{{ album.name }}" {% endif %} src="{{ album_head.url }}">
                         {% endthumbnail %}
+             
+                            <div class="caption clearfix">
+                                <div class="pull-left">
+                    
+                                    <span class="album-name">{{ album.name }}</span>
+                    
+                                </div>
+                                <div class="pull-right">
+                                    <a href="{{ album.get_absolute_url }}" class="btn btn-primary btn-sm">
+                                        Take a look</a>
+                                </div>
+                            </div>
+
                     {% else %}
-                        [{% trans "Empty album" %}]
+                        <a href="{{ album.get_absolute_url }}">[{% trans "Empty album" %}]</a>
+                    
+
                     {% endif %}
-                    <br>
-                    <span class="album-name">{{ album.name }}</span>
-                    {% if not view_user and IMAGESTORE_SHOW_USER %}
-                        <br>
-                        <span class="album-user">
-                            {% trans "user" %}: {{ album.user }}
-                        </span>
-                    {% endif %}
-                    </a>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            {% endif %}
+{% endif %}
+
+       
         {% endfor %}
     </div>
     {% include "imagestore/pagination.html" %}

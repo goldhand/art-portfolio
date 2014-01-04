@@ -2,6 +2,8 @@
 {% load i18n %}
 {% load thumbnail %}
 {% load url from future %}
+{% load crispy_forms_tags %}
+
 
 {% block title %}
     {% trans "Upload image" %}
@@ -13,9 +15,9 @@
 
 {% block content %}
     <h1>{% trans "Upload image" %}</h1>
-    <form action="." method="post" enctype="multipart/form-data" class='upload-image'>
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="{% trans "Upload" %}" class='btn success'>
-    </form>
+    
+ {% crispy form %}
+
+
+
 {% endblock content %}

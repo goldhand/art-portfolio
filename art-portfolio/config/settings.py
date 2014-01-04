@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-import os
+import os, pwd
 from os.path import join
 
 # See: http://django-storages.readthedocs.org/en/latest/backends/amazon-S3.html#settings
@@ -24,6 +24,8 @@ except ImportError:
 from configurations import Configuration, values
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+USER = pwd.getpwuid(os.getuid())[0]
+PROJECT_NAME = "art-portfolio"
 
 
 class Common(Configuration):
@@ -137,7 +139,7 @@ class Common(Configuration):
 
     ########## GENERAL CONFIGURATION
     # See: https://docs.djangoproject.com/en/dev/ref/settings/#time-zone
-    TIME_ZONE = 'America/Los_Angeles'
+    TIME_ZONE = 'America/Phoenix'
 
     # See: https://docs.djangoproject.com/en/dev/ref/settings/#language-code
     LANGUAGE_CODE = 'en-us'
@@ -278,6 +280,7 @@ class Common(Configuration):
     IMAGESTORE_LOAD_CSS = True
 
 
+
 class Local(Common):
 
     ########## INSTALLED_APPS
@@ -297,7 +300,7 @@ class Local(Common):
     INTERNAL_IPS = ('127.0.0.1',)
 
     DEBUG_TOOLBAR_CONFIG = {
-        'INTERCEPT_REDIRECTS': False,
+        'INTERCEPT_REDIRECTS': True,
         'SHOW_TEMPLATE_CONTEXT': True,
     }
     ########## end django-debug-toolbar
@@ -306,9 +309,9 @@ class Local(Common):
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-            'NAME': 'art-portfolio',                      # Or path to database file if using sqlite3.
+            'NAME': '%s-%s' % (PROJECT_NAME, USER),             # Or path to database file if using sqlite3.
             # The following settings are not used with sqlite3:
-            'USER': 'wpl',
+            'USER': '%s' % USER,
             'PASSWORD': '',
             'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
             'PORT': '',                      # Set to empty string for default.
