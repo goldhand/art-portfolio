@@ -1,13 +1,49 @@
 {% extends "base.html" %}
-{% load thumbnail %}
+{% load thumbnail staticfiles %}
 
 {% block page_title %}Elisa Erin Lehan{% endblock page_title %}
-
+{% block page_description %}Graphic Designer{% endblock page_description %}
 {% block content %}
-<h1 class="center-text">IM THE BIRTHDAY GIRL</h1>
-<!-- Fade Slider -->
-        <div class="col-sm-12">
-          <h2 class="center-text">Featured Work</h2>
+        
+          
+                <div class="col-md-4 col-md-offset-4">
+                  <div class="thumbnail">
+                    
+                    <img src="{% static 'img/elisa_erin.jpg' %}" alt="" class="img-circle img-thumbnail img-responsive" style="max-height: 300px;">
+                    
+                    <div class="caption center-text">
+                      <h1><i class="fa fa-beer fa-3x"></i></h1>
+                      <p>I just love party! Im shmammered!!! HEHEHE! WHERES THE VODKA!</p>
+                      <br>
+
+                      <div class="row">
+                      <div class="col-sm-3">
+                        <a href="#" class="btn btn-link"><em class="fa fa-facebook fa-2x"></em></a>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href="#" class="btn btn-link"><em class="fa fa-twitter fa-2x"></em></a>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href="#" class="btn btn-link"><em class="fa fa-google-plus fa-2x"></em></a>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href="#" class="btn btn-link"><em class="fa fa-tumblr fa-2x"></em></a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+             <div class="clearfix"></div>
+              <br><br>
+
+                
+</div>
+<div class="jumbotron" style="margin-bottom:0;">
+
+<h2 class="center-text">Featured Work</h2>
+</div>
+<div>
+
           <div id="myFadeCarousel" class="carousel fade">
             <ol class="carousel-indicators">
 			{% for img in image_list %}
@@ -18,18 +54,20 @@
             	{% for image in image_list %}
               <!-- Slide -->
               <div class="item{% if forloop.first %} active{% endif %}">
-			{% thumbnail image.image "1200x500" crop="center" as im %}
+			{% thumbnail image.image "1500x500" crop="center" as im %}
                 
                     <img class="" {% if image.title %} alt="{{ image.title }}" {% endif %} src="{{ im.url }}">
                
                 
             {% endthumbnail %}
 
-                <div class="carousel-caption caption-right">
+                <div class="carousel-caption caption-center">
                  	{% if image.title %}
-                  	<h4 class="carousel-caption-heading">
-                    	<a href="{% include "imagestore/image-href.html" %}">{{ image.title }}</a>
-                 	</h4>
+                  	<h3 class="carousel-caption-heading">
+                    	<a href="{% include "imagestore/image-href.html" %}" style="color:#f7f7f7;">
+                        {{ image.title }}
+                      </a>
+                 	</h3>
                   	{% endif %}
                 
                   <p>{{ image.description }}</p>

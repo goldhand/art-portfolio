@@ -46,23 +46,27 @@
 {% block content %}
    
     {% include "imagestore/pagination.html" %}
-    <div id="image-thumbnails">
+    <div id="image-thumbnails row">
         {% for image in image_list %}
-            <div class='image-preview'>
-            {% thumbnail image.image "120x120" crop="center" as im %}
+        {% if forloop.counter0|divisibleby:3 %}
+            </div>
+            <div class="image-thumbnails row effect-1">
+        {% endif %}
+        <div class="col-sm-4">
+            <div class='image-preview thumbnail{% if image.title %} has-ribbon' data-text="{{ image.title }}"{% else %}'{% endif %}>
+                
+            {% thumbnail image.image "770x500" crop="center" as im %}
                 <a class="thumb" rel='gallery-image[ilist]' href="{{ image.image.url }}">
-                    <img class="preview" {% if image.title %} alt="{{ image.title }}" {% endif %} src="{{ im.url }}">
+                    <img class="preview img-responsive" {% if image.title %} alt="{{ image.title }}" {% endif %} src="{{ im.url }}">
                 </a>
                 <a href="{% include "imagestore/image-href.html" %}">
-                    {% if image.title %}
-                        <br><span class='image-title'>{{ image.title }}</span>
-                    {% else %}
-                        {% trans 'Info' %}
-                    {% endif %}
+                    
                 </a>
             {% endthumbnail %}
             </div>
+        </div>
         {% endfor %}
+    </div>
     </div>
     {% include "imagestore/pagination.html" %}
 {% endblock %}

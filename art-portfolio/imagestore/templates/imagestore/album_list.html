@@ -43,15 +43,18 @@
             <div class='album'>
                 <div class='album-head'>
 
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="col-sm-4">
                         <div class="thumbnail">               
                     {% if album.get_head %}
                     
                         {% thumbnail album.get_head.image "400x300" crop='center' as album_head %}
+                            <img class="preview hidden-xs" {% if album.name %} alt="{{ album.name }}" {% endif %} src="{{ album_head.url }}">
+                            <a href="{{ album.get_absolute_url }}" class="visible-xs">
                             <img class="preview" {% if album.name %} alt="{{ album.name }}" {% endif %} src="{{ album_head.url }}">
+                            </a>
                         {% endthumbnail %}
              
-                            <div class="caption clearfix">
+                            <div class="caption clearfix hidden-xs">
                                 <div class="pull-left">
                     
                                     <span class="album-name">{{ album.name }}</span>
