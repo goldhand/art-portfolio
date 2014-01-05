@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="{% static 'bootstrap3/assets/css/bootstrap.pink.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap3/assets/css/bootstrap.orange.min.css' %}">
 
     <!-- Your stuff: Third-party css libraries go here -->
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -37,20 +37,52 @@
 
     <div class="header navbar">
       <div class="container">
-        <a class="navbar-brand" href="/">art-portfolio</a>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'imagestore:index' %}">Gallery</a></li>
-          {% block extra_nav %}{% endblock extra_nav %}
-          {% if request.user.is_authenticated %}
-            <li><a href="{% url 'users:detail' request.user.username  %}">{% trans "My Profile" %}</a></li>
-            <li><a href="{% url 'account_logout' %}">{% trans "Logout" %}</a></li>
-          {% else %}
-            <li><a href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a></li>
-            <li><a href="{% url 'account_login' %}">{% trans "Log In" %}</a></li>
-          {% endif %}
+       
+
+        <ul class="nav navbar-nav nav-pills">
+          <li class="{% if request.path == '/' %}active{% endif %}"><a href="{% url 'pages:index' %}">Home</a></li>
+          <li class="{% if request.path == '/about/' %}active{% endif %}"><a href="{% url 'about' %}">About</a></li>
+          <li class="{% if album_list %}active{% endif %}"><a href="{% url 'imagestore:index' %}">Gallery</a></li>
+          <li class="dropdown">
+            <a data-target="#" data-toggle="dropdown">
+              Digital
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li><a href="{% url 'imagestore:album' 1 %}">Digital Paint</a>
+              </li>
+              <li><a href="{% url 'imagestore:album' 2 %}">Digital Collage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a data-target="#" data-toggle="dropdown">
+              Traditional
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li>
+                <a href="{% url 'imagestore:album' 3 %}">Pen & ink</a>
+              </li>
+              <li>
+                <a href="{% url 'imagestore:album' 4 %}">Acryllic</a>
+              </li>
+              <li>
+                <a href="{% url 'imagestore:album' 5 %}">Graphite</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a data-target="#" data-toggle="dropdown">
+              3-D
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li>
+                <a href="{% url 'imagestore:album' 6 %}">BIRTHDAY GIRL!</a>
+              </li>
+            </ul>
+          </li>
+          
         </ul>
+
       </div>
     </div>
 
@@ -61,8 +93,31 @@
               <div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>{{ message }}</div>
           {% endfor %}
       {% endif %}
-    {% block breadcrumb %}{% endblock breadcrumb %}
 
+<h1 class="center-text">{% block page_title %}{% endblock page_title %}</h1>
+<hr>
+<p class="lead center-text">{% block page_description %}{% endblock page_description %}</p>
+<div class="center-div center-text">
+    {% block breadcrumb %}{% endblock breadcrumb %}
+</div>
+{% if request.user.is_staff %}
+ <div class="pull-right">
+ <div class="dropdown">
+    <button data-target="#" data-toggle="dropdown" class="btn btn-default"><i class="fa fa-cog fa-2x"></i></button>
+
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"> 
+          {% block extra_nav %}{% endblock extra_nav %}
+          {% if request.user.is_authenticated %}
+            <li><a href="{% url 'users:detail' request.user.username  %}">{% trans "My Profile" %}</a></li>
+            <li><a href="{% url 'account_logout' %}">{% trans "Logout" %}</a></li>
+          {% else %}
+            <li><a href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a></li>
+            <li><a href="{% url 'account_login' %}">{% trans "Log In" %}</a></li>
+          {% endif %}
+          </ul>
+</div>
+        </div>
+{% endif %}
       {% block content %}
         <p>Use this document as a way to quick start any new project.</p>
       {% endblock content %}

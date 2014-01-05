@@ -4,16 +4,19 @@
 {% load tagging_tags %}
 {% load url from future %}
 
-{% block title %}
-    {% trans "Image" %} - {{ image.title }}
-{% endblock %}
+{% block title %}{{ image.title }}{% endblock title %}
+{% block page_title %}
+    {{ image.title }}
+      
+{% endblock page_title %}
+{% block page_description %}{{ image.description }}{% endblock page_description %}
 
 {% block imagestore-breadcrumb %}
     {% if view_user and IMAGESTORE_SHOW_USER %}
         <li class='scope-view-user'><a href="{% url 'imagestore:user-images' username=view_user %}">{% trans "User" %}: {{ view_user }}</a></li>
     {% endif %}
     {% if album %}
-        <li class='scope-album'><a href="{{ album.get_absolute_url }}">{% trans "Album" %}: {{ album.name }}</a></li>
+        <li class='scope-album'><a href="{{ album.get_absolute_url }}">{{ album.name }}</a></li>
     {% endif %}
     {% if tag %}
         <li class='scope-tag'><a href="{% url 'imagestore:tag' tag=tag %}">{% trans "Tag" %}: {{ tag }}</a></li>
@@ -38,15 +41,7 @@
 {% endblock %}
 
 {% block content %}
-        {% if image.title %}<h1>{{ image.title }}</h1>{% endif %}
-        {% if album or tag or view_user %}
-            <h2>
-                    {% include "imagestore/image-scope.html" %}
-            </h2>
-        {% endif %}
-        <div class="image-description">
-            {{ image.description }}
-        </div>
+     
         <div id="image-view">
             <div class="navigation">
                 {% if previous %} <a class="previous-link" href="

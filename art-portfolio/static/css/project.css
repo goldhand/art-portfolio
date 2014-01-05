@@ -31,3 +31,25 @@
   background-color: #f2dede;
   border-color: #eed3d7;
 }
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+.center-div {
+      display: table;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+
+}
+.center-text {
+  text-align: center;
+}

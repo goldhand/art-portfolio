@@ -2680,3 +2680,959 @@ Quit the server with CONTROL-C.
 [04/Jan/2014 02:03:26] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
 [04/Jan/2014 02:03:37] "GET /gallery/album/3/ HTTP/1.1" 200 119387
 [04/Jan/2014 02:03:37] "GET /media/cache/98/b2/98b24c6d89b39897a882fab5e4d92b5e.jpg HTTP/1.1" 304 0
+[04/Jan/2014 12:30:23] "GET / HTTP/1.1" 200 76090
+[04/Jan/2014 12:30:23] "GET /static/bootstrap3/assets/css/bootstrap.pink.min.css HTTP/1.1" 304 0
+[04/Jan/2014 12:30:23] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 12:30:23] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 12:30:23] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 12:30:23] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 12:30:23] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 12:30:23] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 12:30:23] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 12:30:23] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 14:44:14] "GET / HTTP/1.1" 200 80496
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 212, in write
+    self.send_headers()
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 270, in send_headers
+    self.send_preamble()
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py", line 194, in send_preamble
+    'Date: %s\r\n' % format_date_time(time.time())
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+[04/Jan/2014 14:44:14] "GET / HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 593, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 651, in __init__
+    self.finish()
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 710, in finish
+    self.wfile.close()
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/usr/local/Cellar/python/2.7.6/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+[04/Jan/2014 14:44:15] "GET / HTTP/1.1" 200 80495
+[04/Jan/2014 14:44:15] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 200 147474
+[04/Jan/2014 14:44:15] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 14:44:15] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 14:44:15] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 14:44:15] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 14:44:15] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 14:44:15] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 14:44:15] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 14:44:15] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 14:44:17] "GET /about/ HTTP/1.1" 200 121989
+[04/Jan/2014 14:44:17] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 118167
+[04/Jan/2014 14:44:17] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 91315
+[04/Jan/2014 14:44:18] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 118168
+[04/Jan/2014 14:44:18] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 91315
+[04/Jan/2014 14:44:18] "GET /static/bootstrap3/assets/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+[04/Jan/2014 14:44:26] "GET /gallery/ HTTP/1.1" 200 108829
+[04/Jan/2014 14:44:26] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 14:44:26] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 14:44:26] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 14:44:26] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 14:44:29] "GET /gallery/album/1/ HTTP/1.1" 200 113222
+[04/Jan/2014 14:44:29] "GET /media/cache/18/75/18759f5f2b411590c71b915922019b1d.jpg HTTP/1.1" 304 0
+[04/Jan/2014 14:45:01] "GET /about/ HTTP/1.1" 200 122021
+[04/Jan/2014 14:45:01] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118201
+[04/Jan/2014 14:45:01] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91266
+[04/Jan/2014 14:45:01] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 91305
+[04/Jan/2014 14:45:17] "GET /gallery/ HTTP/1.1" 200 108829
+[04/Jan/2014 14:45:18] "GET /gallery/ HTTP/1.1" 200 108833
+[04/Jan/2014 14:45:23] "GET /gallery/ HTTP/1.1" 200 108831
+[04/Jan/2014 14:45:30] "GET /accounts/login/ HTTP/1.1" 200 94961
+[04/Jan/2014 14:45:34] "POST /accounts/login/ HTTP/1.1" 200 99671
+[04/Jan/2014 14:45:36] "GET /users/~redirect/ HTTP/1.1" 200 70226
+[04/Jan/2014 14:45:37] "GET /users/admin/ HTTP/1.1" 200 83512
+[04/Jan/2014 14:45:39] "GET /users/admin/ HTTP/1.1" 200 82824
+[04/Jan/2014 14:45:40] "GET /gallery/ HTTP/1.1" 200 115205
+[04/Jan/2014 14:45:42] "GET /gallery/album/1/ HTTP/1.1" 200 119513
+[04/Jan/2014 14:45:43] "GET /media/imagestore/5748d341-8c0e-4b8c-a2d0-9edfc76f33ca.JPG HTTP/1.1" 304 0
+[04/Jan/2014 14:45:43] "GET /static/prettyphoto/images/prettyPhoto/facebook/sprite.png HTTP/1.1" 304 0
+[04/Jan/2014 14:45:43] "GET /static/prettyphoto/images/prettyPhoto/facebook/loader.gif HTTP/1.1" 304 0
+[04/Jan/2014 14:45:43] "GET /static/prettyphoto/images/prettyPhoto/facebook/contentPatternTop.png HTTP/1.1" 304 0
+[04/Jan/2014 14:45:43] "GET /static/prettyphoto/images/prettyPhoto/facebook/contentPatternRight.png HTTP/1.1" 304 0
+[04/Jan/2014 14:45:43] "GET /static/prettyphoto/images/prettyPhoto/facebook/contentPatternBottom.png HTTP/1.1" 304 0
+[04/Jan/2014 14:45:43] "GET /static/prettyphoto/images/prettyPhoto/facebook/contentPatternLeft.png HTTP/1.1" 304 0
+[04/Jan/2014 14:45:43] "GET /static/prettyphoto/images/prettyPhoto/light_rounded/btnNext.png HTTP/1.1" 304 0
+[04/Jan/2014 14:45:43] "GET /static/prettyphoto/images/prettyPhoto/facebook/btnNext.png HTTP/1.1" 304 0
+[04/Jan/2014 14:45:50] "GET /static/prettyphoto/images/prettyPhoto/facebook/btnPrevious.png HTTP/1.1" 304 0
+[04/Jan/2014 14:58:33] "GET / HTTP/1.1" 200 80683
+[04/Jan/2014 15:05:46] "GET / HTTP/1.1" 200 70235
+[04/Jan/2014 15:05:46] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:05:46] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:05:46] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:05:46] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:05:46] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:05:46] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:05:46] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:05:46] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:05:46] "GET /static/css/project.css HTTP/1.1" 200 775
+[04/Jan/2014 15:09:12] "GET / HTTP/1.1" 200 70235
+[04/Jan/2014 15:09:12] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:09:12] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:09:12] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:09:12] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:09:12] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:09:12] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:09:12] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:09:12] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:09:12] "GET /static/css/project.css HTTP/1.1" 200 802
+[04/Jan/2014 15:10:38] "GET / HTTP/1.1" 200 70177
+[04/Jan/2014 15:10:38] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:10:38] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:10:38] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:10:38] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:10:38] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:10:38] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:10:38] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:10:38] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:10:38] "GET /static/css/project.css HTTP/1.1" 200 823
+[04/Jan/2014 15:10:58] "GET / HTTP/1.1" 200 70187
+[04/Jan/2014 15:10:58] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:10:58] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:10:58] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:10:58] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:10:58] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:10:58] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:10:58] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:10:58] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:10:58] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:11:04] "GET /about/ HTTP/1.1" 200 121938
+[04/Jan/2014 15:11:04] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:11:04] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118199
+[04/Jan/2014 15:11:04] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91267
+[04/Jan/2014 15:11:06] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 118163
+[04/Jan/2014 15:11:06] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 91311
+[04/Jan/2014 15:11:06] "GET /gallery/ HTTP/1.1" 200 108789
+[04/Jan/2014 15:14:33] "GET / HTTP/1.1" 200 70204
+[04/Jan/2014 15:14:33] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:14:33] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:14:33] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:14:33] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:14:33] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:14:33] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:14:33] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:14:33] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:14:33] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:14:36] "GET /about/ HTTP/1.1" 200 121957
+[04/Jan/2014 15:14:36] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118205
+[04/Jan/2014 15:14:36] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91267
+[04/Jan/2014 15:14:37] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 91315
+[04/Jan/2014 15:14:38] "GET /gallery/ HTTP/1.1" 200 109285
+[04/Jan/2014 15:14:41] "GET /gallery/album/1/ HTTP/1.1" 200 113186
+[04/Jan/2014 15:14:59] "GET /about/ HTTP/1.1" 200 121973
+[04/Jan/2014 15:14:59] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:15:00] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118199
+[04/Jan/2014 15:15:00] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91267
+[04/Jan/2014 15:15:00] "GET / HTTP/1.1" 200 70043
+[04/Jan/2014 15:15:02] "GET /about/ HTTP/1.1" 200 121958
+[04/Jan/2014 15:15:02] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118201
+[04/Jan/2014 15:15:02] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91267
+[04/Jan/2014 15:15:03] "GET / HTTP/1.1" 200 70042
+[04/Jan/2014 15:15:04] "GET /about/ HTTP/1.1" 200 121958
+[04/Jan/2014 15:15:04] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118199
+[04/Jan/2014 15:15:04] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91267
+[04/Jan/2014 15:15:04] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 118170
+[04/Jan/2014 15:15:04] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 91315
+[04/Jan/2014 15:15:05] "GET /gallery/ HTTP/1.1" 200 109285
+[04/Jan/2014 15:15:07] "GET / HTTP/1.1" 200 70046
+[04/Jan/2014 15:15:08] "GET /about/ HTTP/1.1" 200 121957
+[04/Jan/2014 15:15:08] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118199
+[04/Jan/2014 15:15:08] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91266
+[04/Jan/2014 15:15:09] "GET /gallery/ HTTP/1.1" 200 109283
+[04/Jan/2014 15:16:17] "GET /gallery/ HTTP/1.1" 200 109565
+[04/Jan/2014 15:16:17] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:16:17] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:16:17] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:16:17] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:16:17] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:16:17] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:16:17] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:16:17] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:16:17] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:16:17] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:16:17] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:16:17] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:16:17] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /gallery/ HTTP/1.1" 200 109568
+[04/Jan/2014 15:16:30] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:16:30] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:16:40] "GET /gallery/album/1/ HTTP/1.1" 200 113247
+[04/Jan/2014 15:16:47] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 118296
+[04/Jan/2014 15:16:47] "GET /media/cache/78/e8/78e887daddb54ef444590df5bd60a48b.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:17:46] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 118430
+[04/Jan/2014 15:17:46] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:17:46] "GET /media/cache/78/e8/78e887daddb54ef444590df5bd60a48b.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:17:46] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:17:46] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:17:46] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:17:46] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:17:46] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:17:46] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:17:46] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:17:46] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:17:54] "GET /accounts/login/ HTTP/1.1" 200 90893
+[04/Jan/2014 15:17:55] "POST /accounts/login/ HTTP/1.1" 200 99665
+[04/Jan/2014 15:17:57] "GET /users/~redirect/ HTTP/1.1" 200 70222
+[04/Jan/2014 15:17:57] "GET /users/admin/ HTTP/1.1" 200 83528
+[04/Jan/2014 15:17:59] "GET /gallery/ HTTP/1.1" 200 115795
+[04/Jan/2014 15:18:45] "GET /gallery/ HTTP/1.1" 200 115539
+[04/Jan/2014 15:18:45] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:18:45] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:18:45] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:18:45] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:18:45] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:18:45] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:18:45] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:18:45] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:18:45] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:18:45] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:18:45] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:18:45] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:18:45] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /gallery/ HTTP/1.1" 200 115949
+[04/Jan/2014 15:19:05] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:19:05] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:19:13] "GET /gallery/ HTTP/1.1" 200 115797
+[04/Jan/2014 15:19:21] "GET /gallery/album/1/ HTTP/1.1" 200 119546
+[04/Jan/2014 15:19:28] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 124917
+[04/Jan/2014 15:20:10] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 125076
+[04/Jan/2014 15:20:10] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:20:10] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:20:10] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:20:10] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:20:10] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:20:10] "GET /media/cache/78/e8/78e887daddb54ef444590df5bd60a48b.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:20:10] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:20:10] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:20:10] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:20:10] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:20:10] "GET /static/bootstrap3/assets/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+[04/Jan/2014 15:20:27] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 125082
+[04/Jan/2014 15:20:27] "GET /media/cache/78/e8/78e887daddb54ef444590df5bd60a48b.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:20:27] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:20:27] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:20:27] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:20:27] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:20:27] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:20:27] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:20:27] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:20:27] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:20:27] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:21:28] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 125056
+[04/Jan/2014 15:21:28] "GET /media/cache/78/e8/78e887daddb54ef444590df5bd60a48b.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:21:28] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:21:28] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:21:28] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:21:28] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:21:28] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:21:28] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:21:28] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:21:28] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:21:28] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:21:50] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 125081
+[04/Jan/2014 15:21:50] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:21:50] "GET /media/cache/78/e8/78e887daddb54ef444590df5bd60a48b.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:21:50] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:21:50] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:21:50] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:21:50] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:21:50] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:21:50] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:21:50] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:21:50] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:22:17] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 125085
+[04/Jan/2014 15:22:17] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:22:17] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:22:17] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:22:17] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:22:17] "GET /media/cache/78/e8/78e887daddb54ef444590df5bd60a48b.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:22:17] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:22:17] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:22:17] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:22:17] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:22:17] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:26:48] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 125099
+[04/Jan/2014 15:26:48] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:26:48] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:26:48] "GET /media/cache/78/e8/78e887daddb54ef444590df5bd60a48b.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:26:48] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:26:48] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:26:48] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:26:48] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:26:48] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:26:48] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:26:48] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:26:48] "GET /static/bootstrap3/assets/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+[04/Jan/2014 15:27:07] "GET /gallery/ HTTP/1.1" 200 115871
+[04/Jan/2014 15:28:20] "GET /gallery/ HTTP/1.1" 200 115833
+[04/Jan/2014 15:28:20] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:28:20] "GET /static/bootstrap3/assets/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /gallery/ HTTP/1.1" 200 115861
+[04/Jan/2014 15:28:52] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:28:52] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:29:09] "GET /gallery/ HTTP/1.1" 200 115687
+[04/Jan/2014 15:31:44] "GET /gallery/ HTTP/1.1" 200 115848
+[04/Jan/2014 15:31:44] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:31:44] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:31:44] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:31:44] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:31:44] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:31:44] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:31:44] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:31:44] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:31:44] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:31:44] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:31:44] "GET /static/css/project.css HTTP/1.1" 200 977
+[04/Jan/2014 15:31:44] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:31:44] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /gallery/ HTTP/1.1" 200 115859
+[04/Jan/2014 15:32:24] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:32:24] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /gallery/ HTTP/1.1" 200 115892
+[04/Jan/2014 15:33:20] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:33:20] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /gallery/ HTTP/1.1" 200 115893
+[04/Jan/2014 15:33:38] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:33:38] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:34:22] "GET /gallery/ HTTP/1.1" 200 115903
+[04/Jan/2014 15:34:22] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:34:22] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:34:22] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:34:22] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:34:22] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:34:22] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:34:22] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:34:22] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:34:22] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:34:22] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:34:22] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:34:23] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:34:23] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /gallery/ HTTP/1.1" 200 115918
+[04/Jan/2014 15:34:49] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:34:49] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:35:02] "GET /gallery/album/1/ HTTP/1.1" 200 119671
+[04/Jan/2014 15:35:24] "GET /gallery/album/1/ HTTP/1.1" 200 119810
+[04/Jan/2014 15:35:24] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:24] "GET /media/cache/18/75/18759f5f2b411590c71b915922019b1d.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:35:24] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:35:24] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:24] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:35:24] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:35:24] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:35:24] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:24] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:24] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:40] "GET /gallery/album/1/ HTTP/1.1" 200 119810
+[04/Jan/2014 15:35:40] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:35:40] "GET /media/cache/18/75/18759f5f2b411590c71b915922019b1d.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:35:40] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:35:40] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:40] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:35:40] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:40] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:35:40] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:40] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:40] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /gallery/ HTTP/1.1" 200 115916
+[04/Jan/2014 15:35:52] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:35:52] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:37:15] "GET /about/ HTTP/1.1" 200 128504
+[04/Jan/2014 15:37:15] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:37:15] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118822
+[04/Jan/2014 15:37:15] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91885
+[04/Jan/2014 15:37:15] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 91925
+[04/Jan/2014 15:37:16] "GET / HTTP/1.1" 200 76574
+[04/Jan/2014 15:37:23] "GET /about/ HTTP/1.1" 200 128490
+[04/Jan/2014 15:37:23] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118821
+[04/Jan/2014 15:37:23] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91885
+[04/Jan/2014 15:37:24] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118823
+[04/Jan/2014 15:37:24] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 118787
+[04/Jan/2014 15:37:27] "GET /gallery/ HTTP/1.1" 200 115772
+[04/Jan/2014 15:39:04] "GET /gallery/ HTTP/1.1" 200 115913
+[04/Jan/2014 15:39:04] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:39:04] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:39:04] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:39:04] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:39:04] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:39:04] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:39:04] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:39:04] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:39:04] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:39:04] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:39:04] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:39:04] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:39:04] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 15:39:11] "GET /about/ HTTP/1.1" 200 128514
+[04/Jan/2014 15:39:11] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118820
+[04/Jan/2014 15:39:11] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91885
+[04/Jan/2014 15:39:13] "GET / HTTP/1.1" 200 76582
+[04/Jan/2014 15:39:48] "GET / HTTP/1.1" 200 76733
+[04/Jan/2014 15:39:48] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:39:48] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:39:48] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:39:48] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:39:48] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:39:48] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:39:48] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:39:48] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:39:48] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:40:35] "GET / HTTP/1.1" 200 76680
+[04/Jan/2014 15:40:35] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 15:40:35] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 15:40:35] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:40:35] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:40:35] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 15:40:35] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:40:35] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 15:40:35] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 15:40:35] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:40:53] "GET /about/ HTTP/1.1" 200 128497
+[04/Jan/2014 15:40:53] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118819
+[04/Jan/2014 15:40:53] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91884
+[04/Jan/2014 15:40:54] "GET /gallery/ HTTP/1.1" 200 115771
+[04/Jan/2014 15:41:22] "GET /users/admin/ HTTP/1.1" 200 82910
+[04/Jan/2014 15:41:24] "GET /gallery/ HTTP/1.1" 200 115788
+[04/Jan/2014 15:41:28] "GET /gallery/album/1/ HTTP/1.1" 200 119671
+[04/Jan/2014 15:46:36] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 125037
+[04/Jan/2014 15:46:36] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 15:47:00] "GET / HTTP/1.1" 200 76561
+[04/Jan/2014 15:47:01] "GET /about/ HTTP/1.1" 200 128498
+[04/Jan/2014 15:47:01] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118819
+[04/Jan/2014 15:47:01] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91885
+[04/Jan/2014 15:47:02] "GET / HTTP/1.1" 200 76541
+[04/Jan/2014 15:47:04] "GET /about/ HTTP/1.1" 200 128497
+[04/Jan/2014 15:47:04] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118819
+[04/Jan/2014 15:47:04] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91885
+[04/Jan/2014 15:47:04] "GET /gallery/ HTTP/1.1" 200 115772
+[04/Jan/2014 15:47:05] "GET /users/admin/ HTTP/1.1" 200 82911
+[04/Jan/2014 15:47:06] "GET /gallery/ HTTP/1.1" 200 115783
+[04/Jan/2014 15:47:11] "GET /accounts/logout/ HTTP/1.1" 200 79078
+[04/Jan/2014 15:47:15] "POST /accounts/logout/ HTTP/1.1" 200 88073
+[04/Jan/2014 15:47:15] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 15:47:16] "GET / HTTP/1.1" 200 70793
+[04/Jan/2014 15:47:19] "GET /accounts/signup/ HTTP/1.1" 200 97195
+[04/Jan/2014 15:47:21] "GET / HTTP/1.1" 200 70160
+[04/Jan/2014 16:08:47] "GET /about/ HTTP/1.1" 200 122098
+[04/Jan/2014 16:08:47] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 16:08:47] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118199
+[04/Jan/2014 16:08:47] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91267
+[04/Jan/2014 16:08:48] "GET /gallery/ HTTP/1.1" 200 109121
+[04/Jan/2014 16:10:25] "GET /gallery/album/4/ HTTP/1.1" 200 106913
+[04/Jan/2014 16:10:25] "GET /media/cache/c5/19/c519cb6c5816e23ed2fcec921b5808c3.jpg HTTP/1.1" 304 0
+[04/Jan/2014 16:11:00] "GET /accounts/login/ HTTP/1.1" 200 90956
+[04/Jan/2014 16:11:01] "POST /accounts/login/ HTTP/1.1" 200 99668
+[04/Jan/2014 16:11:03] "GET /users/~redirect/ HTTP/1.1" 200 70224
+[04/Jan/2014 16:11:03] "GET /users/admin/ HTTP/1.1" 200 83608
+[04/Jan/2014 16:14:23] "GET /users/admin/ HTTP/1.1" 200 83397
+[04/Jan/2014 16:14:23] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:14:23] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:14:23] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 16:14:23] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 16:14:23] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 16:14:23] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 16:14:23] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:14:23] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 16:14:23] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:16:10] "GET /users/admin/ HTTP/1.1" 200 83768
+[04/Jan/2014 16:16:10] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:16:10] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:16:10] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 16:16:10] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 16:16:10] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 16:16:10] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 16:16:10] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:16:10] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 16:16:10] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:16:23] "GET /gallery/ HTTP/1.1" 200 116074
+[04/Jan/2014 16:16:34] "GET /gallery/album/1/ HTTP/1.1" 200 120152
+[04/Jan/2014 16:17:56] "GET /__debug__/template_source/?template=imagestore/image-scope.html HTTP/1.1" 200 4004
+[04/Jan/2014 16:19:03] "GET /gallery/album/1/ HTTP/1.1" 200 120107
+[04/Jan/2014 16:19:03] "GET /media/cache/18/75/18759f5f2b411590c71b915922019b1d.jpg HTTP/1.1" 304 0
+[04/Jan/2014 16:19:03] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 16:19:03] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:19:03] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:19:03] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 16:19:03] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 16:19:03] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 16:19:03] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:19:03] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 16:19:03] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:21:12] "GET /gallery/album/1/ HTTP/1.1" 200 119166
+[04/Jan/2014 16:21:12] "GET /media/cache/18/75/18759f5f2b411590c71b915922019b1d.jpg HTTP/1.1" 304 0
+[04/Jan/2014 16:21:12] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:21:12] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:21:12] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 16:21:12] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 16:21:12] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 16:21:12] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:21:12] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 16:21:12] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 16:21:12] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:21:58] "GET /gallery/album/add/ HTTP/1.1" 200 94100
+[04/Jan/2014 16:22:24] "GET /gallery/ HTTP/1.1" 200 116087
+[04/Jan/2014 16:22:26] "GET /gallery/album/1/ HTTP/1.1" 200 119191
+[04/Jan/2014 16:22:28] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 125514
+[04/Jan/2014 16:23:38] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 125652
+[04/Jan/2014 16:23:38] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:23:38] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:23:38] "GET /media/cache/78/e8/78e887daddb54ef444590df5bd60a48b.jpg HTTP/1.1" 304 0
+[04/Jan/2014 16:23:38] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 16:23:38] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 16:23:38] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 16:23:38] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 16:23:38] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 16:23:38] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:23:38] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:25:28] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 125424
+[04/Jan/2014 16:25:28] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:25:28] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 16:25:28] "GET /media/cache/78/e8/78e887daddb54ef444590df5bd60a48b.jpg HTTP/1.1" 304 0
+[04/Jan/2014 16:25:28] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 16:25:28] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:25:28] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 16:25:28] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 16:25:28] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:25:28] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 16:25:28] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:28:12] "GET / HTTP/1.1" 200 77308
+[04/Jan/2014 16:28:13] "GET /about/ HTTP/1.1" 200 129235
+[04/Jan/2014 16:28:14] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118819
+[04/Jan/2014 16:28:14] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91888
+[04/Jan/2014 16:28:14] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 118783
+[04/Jan/2014 16:28:14] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 91932
+[04/Jan/2014 16:28:16] "GET /gallery/ HTTP/1.1" 200 116097
+[04/Jan/2014 16:28:20] "GET /gallery/album/1/ HTTP/1.1" 200 119223
+[04/Jan/2014 16:28:22] "GET /media/imagestore/5748d341-8c0e-4b8c-a2d0-9edfc76f33ca.JPG HTTP/1.1" 304 0
+[04/Jan/2014 16:28:51] "GET /gallery/album/1/image/1/ HTTP/1.1" 200 125321
+[04/Jan/2014 16:29:05] "GET /gallery/image/1/update/ HTTP/1.1" 200 182055
+[04/Jan/2014 16:29:54] "POST /gallery/upload/ HTTP/1.1" 200 180282
+[04/Jan/2014 16:29:54] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 16:29:54] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:29:54] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 16:29:54] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 16:29:54] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:30:00] "POST /gallery/upload/ HTTP/1.1" 200 120935
+[04/Jan/2014 16:30:02] "GET /gallery/image/6/ HTTP/1.1" 200 222872
+[04/Jan/2014 16:30:02] "GET /media/cache/9f/e6/9fe64310817a8956314fde46cb91c970.jpg HTTP/1.1" 200 114288
+[04/Jan/2014 16:30:19] "GET /gallery/ HTTP/1.1" 200 116116
+[04/Jan/2014 16:30:24] "GET /gallery/album/1/ HTTP/1.1" 200 180271
+[04/Jan/2014 16:30:24] "GET /media/cache/7a/c8/7ac8162c2b5f8e4b76867aac0b1f0438.jpg HTTP/1.1" 200 6749
+[04/Jan/2014 16:30:28] "GET /gallery/album/1/image/6/ HTTP/1.1" 200 134666
+[04/Jan/2014 16:30:28] "GET /media/cache/9f/e6/9fe64310817a8956314fde46cb91c970.jpg HTTP/1.1" 304 0
+[04/Jan/2014 16:31:54] "GET /admin HTTP/1.1" 301 0
+[04/Jan/2014 16:31:55] "GET /admin/ HTTP/1.1" 200 123151
+[04/Jan/2014 16:31:59] "GET /admin/imagestore/album/ HTTP/1.1" 200 567213
+[04/Jan/2014 16:31:59] "GET /media/cache/11/d2/11d2e3edc3fd13831706146d7ce12aec.jpg HTTP/1.1" 304 0
+[04/Jan/2014 16:31:59] "GET /media/cache/c2/21/c221e9da48cf0871f12ef98afb423913.jpg HTTP/1.1" 200 5385
+[04/Jan/2014 16:31:59] "GET /media/cache/21/75/21757ef3166ee6485408307715d1d20a.jpg HTTP/1.1" 200 4752
+[04/Jan/2014 16:31:59] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[04/Jan/2014 16:31:59] "GET /media/cache/c8/fd/c8fdb379f4fd147eb3398e734eeec6ce.jpg HTTP/1.1" 200 4437
+[04/Jan/2014 16:31:59] "GET /media/cache/5a/da/5adac9ccc9925edc535782edda53e651.jpg HTTP/1.1" 200 4742
+[04/Jan/2014 16:32:01] "GET /admin/imagestore/album/3/ HTTP/1.1" 200 186963
+[04/Jan/2014 16:32:01] "GET /media/cache/08/d3/08d351c5e9bc27d1c7c31e095a00e81c.jpg HTTP/1.1" 200 5205
+[04/Jan/2014 16:32:01] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[04/Jan/2014 16:33:58] "GET /gallery/album/1/image/6/ HTTP/1.1" 200 132598
+[04/Jan/2014 16:33:58] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:33:58] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 16:33:58] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:33:58] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 16:33:58] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 16:33:58] "GET /media/cache/9f/e6/9fe64310817a8956314fde46cb91c970.jpg HTTP/1.1" 304 0
+[04/Jan/2014 16:33:58] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:33:58] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 16:33:58] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 16:33:58] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:34:11] "GET /gallery/ HTTP/1.1" 200 116134
+[04/Jan/2014 16:34:14] "GET /gallery/album/1/ HTTP/1.1" 200 125564
+[04/Jan/2014 16:34:14] "GET /media/cache/7a/c8/7ac8162c2b5f8e4b76867aac0b1f0438.jpg HTTP/1.1" 304 0
+[04/Jan/2014 16:53:08] "GET /gallery/album/1/ HTTP/1.1" 200 126645
+[04/Jan/2014 16:53:08] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:53:08] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 16:53:08] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 16:53:08] "GET /media/cache/18/75/18759f5f2b411590c71b915922019b1d.jpg HTTP/1.1" 304 0
+[04/Jan/2014 16:53:08] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:53:08] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 16:53:08] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 16:53:08] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 16:53:08] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 16:53:08] "GET /media/cache/7a/c8/7ac8162c2b5f8e4b76867aac0b1f0438.jpg HTTP/1.1" 304 0
+[04/Jan/2014 16:53:08] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 16:53:11] "GET /gallery/album/5/ HTTP/1.1" 200 175163
+[04/Jan/2014 16:53:11] "GET /media/cache/1d/e8/1de8f08913b7dd39a3b26390283f3d4d.jpg HTTP/1.1" 200 6578
+[04/Jan/2014 16:53:13] "GET /gallery/album/6/ HTTP/1.1" 200 106856
+[04/Jan/2014 16:54:12] "GET /about/ HTTP/1.1" 200 130070
+[04/Jan/2014 16:54:12] "GET /about/assets/img/image-placeholder-64x64.png HTTP/1.1" 404 118823
+[04/Jan/2014 16:54:12] "GET /about/assets/img/image-placeholder.png HTTP/1.1" 404 91885
+[04/Jan/2014 16:54:15] "GET /gallery/album/3/ HTTP/1.1" 200 120423
+[04/Jan/2014 16:54:15] "GET /media/cache/98/b2/98b24c6d89b39897a882fab5e4d92b5e.jpg HTTP/1.1" 304 0
+[04/Jan/2014 17:04:56] "GET / HTTP/1.1" 200 78102
+[04/Jan/2014 17:04:56] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 17:07:00] "GET / HTTP/1.1" 200 80631
+[04/Jan/2014 17:07:00] "GET /static/bootstrap3/assets/js/dropper.input.js HTTP/1.1" 304 0
+[04/Jan/2014 17:07:00] "GET /static/bootstrap3/assets/css/bootstrap.orange.min.css HTTP/1.1" 304 0
+[04/Jan/2014 17:07:00] "GET /static/bootstrap3/assets/js/jquery.gmap.min.js HTTP/1.1" 304 0
+[04/Jan/2014 17:07:00] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 17:07:00] "GET /static/prettyphoto/css/prettyPhoto.css HTTP/1.1" 304 0
+[04/Jan/2014 17:07:00] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 17:07:00] "GET /static/js/project.js HTTP/1.1" 304 0
+[04/Jan/2014 17:07:00] "GET /static/prettyphoto/js/jquery.prettyPhoto.js HTTP/1.1" 304 0
+[04/Jan/2014 17:07:00] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 17:07:01] "GET /assets/img/bootstrap-mdo-sfmoma-01.jpg HTTP/1.1" 404 92015
+[04/Jan/2014 17:07:01] "GET /assets/img/bootstrap-mdo-sfmoma-02.jpg HTTP/1.1" 404 118905
+[04/Jan/2014 17:07:01] "GET /assets/img/bootstrap-mdo-sfmoma-03.jpg HTTP/1.1" 404 92016
+Validating models...
+
+0 errors found
+January 04, 2014 - 01:56:57
+Django version 1.6.1, using settings 'config.settings', configuration 'Local'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 57301)
+----------------------------------------
+/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/sorl/thumbnail/helpers.py:5: DeprecationWarning: django.utils.simplejson is deprecated; use json instead.
+  from django.utils import simplejson
+
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/debug_toolbar/middleware.py", line 75, in process_request
+    urlconf = import_module(getattr(request, 'urlconf', settings.ROOT_URLCONF))
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/config/urls.py", line 14, in <module>
+    url(r'^$', include("pages.urls", namespace="pages")),
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/urls.py", line 2, in <module>
+    from .views import IndexView
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/views.py", line 28, in <module>
+    class IndexView(ListView):
+NameError: name 'ListView' is not defined
+[04/Jan/2014 17:20:41] "GET /admin/ HTTP/1.1" 500 109156
+[04/Jan/2014 17:20:57] "GET /admin/ HTTP/1.1" 200 123297
+[04/Jan/2014 17:20:57] "GET /static/debug_toolbar/css/toolbar.min.css HTTP/1.1" 304 0
+[04/Jan/2014 17:20:57] "GET /static/debug_toolbar/js/toolbar.min.js HTTP/1.1" 304 0
+[04/Jan/2014 17:21:00] "GET /admin/tagging/tag/ HTTP/1.1" 200 90457
+[04/Jan/2014 17:21:00] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[04/Jan/2014 17:21:02] "GET /admin/tagging/tag/5/ HTTP/1.1" 200 95859
+[04/Jan/2014 17:21:02] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[04/Jan/2014 17:21:09] "GET /gallery/ HTTP/1.1" 200 155653
+[04/Jan/2014 17:21:09] "GET /media/cache/2b/91/2b9144d6a54a067228e52190354d7c58.jpg HTTP/1.1" 304 0
+[04/Jan/2014 17:21:09] "GET /static/css/project.css HTTP/1.1" 304 0
+[04/Jan/2014 17:21:09] "GET /media/cache/91/3b/913b44e8cdc09420f3be7999089b5afa.jpg HTTP/1.1" 304 0
+[04/Jan/2014 17:21:09] "GET /media/cache/30/a5/30a5eafc59b74a81fef4952c4f69d89a.jpg HTTP/1.1" 304 0
+[04/Jan/2014 17:21:09] "GET /media/cache/6b/f8/6bf8df4d567f707324f1e827507f7909.jpg HTTP/1.1" 304 0
+[04/Jan/2014 17:21:09] "GET /static/bootstrap3/assets/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+[04/Jan/2014 17:21:12] "GET /gallery/album/3/ HTTP/1.1" 200 130202
+[04/Jan/2014 17:21:15] "GET /gallery/album/3/image/3/ HTTP/1.1" 200 140115
+[04/Jan/2014 17:21:15] "GET /media/cache/d6/e5/d6e5e7706227fb5b8f14b31da77405eb.jpg HTTP/1.1" 304 0
+[04/Jan/2014 17:21:18] "GET /gallery/tag/sadf/ HTTP/1.1" 200 114568
+Validating models...
+
+0 errors found
+January 04, 2014 - 17:19:37
+Django version 1.6.1, using settings 'config.settings', configuration 'Local'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/sorl/thumbnail/helpers.py:5: DeprecationWarning: django.utils.simplejson is deprecated; use json instead.
+  from django.utils import simplejson
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/debug_toolbar/middleware.py", line 75, in process_request
+    urlconf = import_module(getattr(request, 'urlconf', settings.ROOT_URLCONF))
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/config/urls.py", line 14, in <module>
+    url(r'^$', include("pages.urls", namespace="pages")),
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/urls.py", line 2, in <module>
+    from .views import IndexView
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/views.py", line 42
+    images = TaggedItem.objects.get_by_model(images, tag_instance)
+         ^
+SyntaxError: invalid syntax
+[04/Jan/2014 17:23:03] "GET / HTTP/1.1" 500 92597
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/debug_toolbar/middleware.py", line 75, in process_request
+    urlconf = import_module(getattr(request, 'urlconf', settings.ROOT_URLCONF))
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/config/urls.py", line 14, in <module>
+    url(r'^$', include("pages.urls", namespace="pages")),
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/urls.py", line 2, in <module>
+    from views import IndexView
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/views.py", line 42
+    images = TaggedItem.objects.get_by_model(images, tag_instance)
+         ^
+SyntaxError: invalid syntax
+[04/Jan/2014 17:23:34] "GET / HTTP/1.1" 500 92783
+Validating models...
+
+0 errors found
+January 04, 2014 - 17:21:58
+Django version 1.6.1, using settings 'config.settings', configuration 'Local'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/sorl/thumbnail/helpers.py:5: DeprecationWarning: django.utils.simplejson is deprecated; use json instead.
+  from django.utils import simplejson
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/debug_toolbar/middleware.py", line 75, in process_request
+    urlconf = import_module(getattr(request, 'urlconf', settings.ROOT_URLCONF))
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/config/urls.py", line 14, in <module>
+    url(r'^$', include("pages.urls", namespace="pages")),
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/urls.py", line 2, in <module>
+    from views import IndexView
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/views.py", line 42
+    images = TaggedItem.objects.get_by_model(images, tag_instance)
+         ^
+SyntaxError: invalid syntax
+[04/Jan/2014 17:24:03] "GET / HTTP/1.1" 500 92835
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/debug_toolbar/middleware.py", line 75, in process_request
+    urlconf = import_module(getattr(request, 'urlconf', settings.ROOT_URLCONF))
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/config/urls.py", line 14, in <module>
+    url(r'^$', include("pages.urls", namespace="pages")),
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/urls.py", line 2, in <module>
+    from .views import IndexView
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/views.py", line 42
+    images = TaggedItem.objects.get_by_model(images, tag_instance)
+         ^
+SyntaxError: invalid syntax
+[04/Jan/2014 17:24:18] "GET / HTTP/1.1" 500 92837
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/debug_toolbar/middleware.py", line 75, in process_request
+    urlconf = import_module(getattr(request, 'urlconf', settings.ROOT_URLCONF))
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/config/urls.py", line 14, in <module>
+    url(r'^$', include("pages.urls", namespace="pages")),
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/urls.py", line 2, in <module>
+    from pages import views
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/views.py", line 43
+    images = TaggedItem.objects.get_by_model(images, tag_instance)
+         ^
+SyntaxError: invalid syntax
+[04/Jan/2014 17:25:44] "GET / HTTP/1.1" 500 92833
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/debug_toolbar/middleware.py", line 75, in process_request
+    urlconf = import_module(getattr(request, 'urlconf', settings.ROOT_URLCONF))
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/config/urls.py", line 14, in <module>
+    url(r'^$', include("pages.urls", namespace="pages")),
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/urls.py", line 2, in <module>
+    from pages import views
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/views.py", line 43
+    images = TaggedItem.objects.get_by_model(images, tag_instance)
+         ^
+SyntaxError: invalid syntax
+[04/Jan/2014 17:26:11] "GET / HTTP/1.1" 500 92833
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/debug_toolbar/middleware.py", line 75, in process_request
+    urlconf = import_module(getattr(request, 'urlconf', settings.ROOT_URLCONF))
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/config/urls.py", line 14, in <module>
+    url(r'^$', include("pages.urls", namespace="pages")),
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/urls.py", line 2, in <module>
+    from .views import IndexView
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/views.py", line 43
+    images = TaggedItem.objects.get_by_model(images, tag_instance)
+         ^
+SyntaxError: invalid syntax
+[04/Jan/2014 17:26:57] "GET / HTTP/1.1" 500 92837
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/debug_toolbar/middleware.py", line 75, in process_request
+    urlconf = import_module(getattr(request, 'urlconf', settings.ROOT_URLCONF))
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/config/urls.py", line 14, in <module>
+    url(r'^$', include("pages.urls", namespace="pages")),
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/goldhand/.virtualenvs/art-portfolio/lib/python2.7/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/urls.py", line 2, in <module>
+    from .views import IndexView
+  File "/Users/goldhand/projects/art-portfolio/art-portfolio/art-portfolio/pages/views.py", line 43
+    images = TaggedItem.objects.get_by_model(images, tag_instance)
+         ^
+SyntaxError: invalid syntax
+[04/Jan/2014 17:27:50] "GET / HTTP/1.1" 500 92837

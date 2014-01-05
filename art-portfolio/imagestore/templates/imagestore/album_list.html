@@ -10,6 +10,13 @@
     {% endif %}
 {% endblock %}
 
+{% block page_title %}
+    {% if view_user %}
+        {% trans "Albums for user" %} {{ view_user }}
+    {% else %}
+        {% trans "All albums" %}
+    {% endif %}
+{% endblock page_title %}
 
 {% block imagestore-info %}
     {% if view_user and IMAGESTORE_SHOW_USER %}
@@ -24,11 +31,7 @@
 {% endblock %}
 
 {% block content %}
-    <h1>{% if view_user %}
-        {% trans "Albums for user" %} {{ view_user }}
-    {% else %}
-        {% trans "All albums" %}
-    {% endif %}</h1>
+
     {% include "imagestore/pagination.html" %}
     <div class='album-list row gallery effect-1'>
         {% for album in album_list %}

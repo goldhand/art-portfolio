@@ -13,6 +13,13 @@
     {% include "imagestore/image-scope.html" %}
 {% endblock %}
 
+{% block page_title %}
+    {% include "imagestore/image-scope.html" %}
+        <div class="image-description">
+            <p class="lead">{{ album.description }}</p>
+        </div>
+{% endblock page_title %}
+
 {% block imagestore-info %}
     {% if view_user and IMAGESTORE_SHOW_USER %}
         {% with user=view_user %}
@@ -37,9 +44,7 @@
 {% endblock %}
 
 {% block content %}
-    <h1>
-        {% include "imagestore/image-scope.html" %}
-    </h1>
+   
     {% include "imagestore/pagination.html" %}
     <div id="image-thumbnails">
         {% for image in image_list %}

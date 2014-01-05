@@ -7,9 +7,8 @@
         <link rel="stylesheet" type="text/css" href="{% static 'imagestore.css' %}" media="screen" />
 
     {% endif %}
-
-
 {% endblock %}
+
 
 {% block breadcrumb %}
     <ul class='breadcrumb'>
@@ -36,9 +35,8 @@
 {% endblock %}
 
 {% block extra_nav %}
-<li class="dropdown">
-    <a data-target="#" data-toggle="dropdown">Images</a>
-<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+
+
                 {% if imagestore_perms.add_image or request.user.is_superuser %}
                     <li><a href={% url 'imagestore:upload' %}>{% trans "Upload image" %}</a></li>
                 {% endif %}
@@ -47,6 +45,5 @@
                 {% endif %}
                 {% block controls %}
                 {% endblock controls %}
-</ul>
-</li>
+
 {% endblock extra_nav %}

@@ -1,1 +1,50 @@
 {% extends "base.html" %}
+{% load thumbnail %}
+
+{% block page_title %}Elisa Erin Lehan{% endblock page_title %}
+
+{% block content %}
+<h1 class="center-text">IM THE BIRTHDAY GIRL</h1>
+<!-- Fade Slider -->
+        <div class="col-sm-12">
+          <h2 class="center-text">Featured Work</h2>
+          <div id="myFadeCarousel" class="carousel fade">
+            <ol class="carousel-indicators">
+			{% for img in image_list %}
+              <li data-target="#myFadeCarousel" data-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active"{% endif %}></li>
+			{% endfor %}
+            </ol>
+            <div class="carousel-inner">
+            	{% for image in image_list %}
+              <!-- Slide -->
+              <div class="item{% if forloop.first %} active{% endif %}">
+			{% thumbnail image.image "1200x500" crop="center" as im %}
+                
+                    <img class="" {% if image.title %} alt="{{ image.title }}" {% endif %} src="{{ im.url }}">
+               
+                
+            {% endthumbnail %}
+
+                <div class="carousel-caption caption-right">
+                 	{% if image.title %}
+                  	<h4 class="carousel-caption-heading">
+                    	<a href="{% include "imagestore/image-href.html" %}">{{ image.title }}</a>
+                 	</h4>
+                  	{% endif %}
+                
+                  <p>{{ image.description }}</p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+            <a class="left carousel-control" href="#myFadeCarousel" data-slide="prev">
+              <span class="fa fa-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myFadeCarousel" data-slide="next">
+            <span class="fa fa-next"></span>  
+            </a>
+          </div>        
+        </div>
+      </div>
+      <div class="clearfix" style="height: 400px;">
+{% endblock content %}

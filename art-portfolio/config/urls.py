@@ -11,9 +11,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$',
-        TemplateView.as_view(template_name='pages/home.html'),
-        name="home"),
+    url(r'^$', include("pages.urls", namespace="pages")),
     url(r'^about/$',
         TemplateView.as_view(template_name='pages/about.html'),
         name="about"),
