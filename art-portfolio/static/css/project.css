@@ -53,3 +53,25 @@
 .center-text {
   text-align: center;
 }
+footer {
+  background-color: rgb(238, 238, 238);
+  color:rgb(125, 125, 125);
+  padding-bottom: 48px;
+padding-left: 30px;
+padding-right: 30px;
+padding-top: 48px;
+}
+footer .list-unstyled strong {
+  font-size: 18px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  
+}
+footer .list-unstyled {
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+}
