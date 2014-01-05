@@ -11,7 +11,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', include("pages.urls", namespace="pages")),
+    
     url(r'^about/$',
         TemplateView.as_view(template_name='pages/about.html'),
         name="about"),
@@ -29,5 +29,6 @@ urlpatterns = patterns('',
     # Your stuff: custom urls go here
     url(r'^api/', include('apiroot.urls')),
     url(r'^gallery/', include('imagestore.urls', namespace='imagestore')),
+    url(r'^', include("pages.urls", namespace="pages")),
 
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
