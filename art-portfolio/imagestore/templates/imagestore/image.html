@@ -21,6 +21,7 @@
     {% if tag %}
         <li class='scope-tag'><a href="{% url 'imagestore:tag' tag=tag %}">{% trans "Tag" %}: {{ tag }}</a></li>
     {% endif %}
+    
     <li>
         {% if image.title %}
             {{ image.title }}
@@ -41,22 +42,31 @@
 {% endblock %}
 
 {% block content %}
-     
+     <div class="row">
         <div id="image-view">
-            <div class="navigation">
-                {% if previous %} <a class="previous-link" href="
+            <div class="navigation col-md-3">
+                {% if previous %} <a class="previous-link pull-left" href="
                 {% with previous as image %}
                     {% include "imagestore/image-href.html" %}
                 {% endwith %}
                 ">← {% trans "previous image" %}</a> {% endif %}
-                {% if next %} <a class="next-link" href="{% with next as image %}
+            </div>
+
+            <div class="col-md-6">
+            <div class="thumbnail">
+            {% thumbnail image.image "800x800" as full_im %}
+                <img class="preview img-responsive" {% if image.title %} alt="{{ image.title }}" {% endif %} src="{{ full_im.url }}">
+            {% endthumbnail %}
+            </div>
+            </div>
+              <div class="navigation col-md-3">
+                
+                {% if next %} <a class="next-link pull-right" href="{% with next as image %}
                     {% include "imagestore/image-href.html" %}
                 {% endwith %}">{% trans "next image" %} →</a> {% endif %}
             </div>
-            {% thumbnail image.image "800x800" as full_im %}
-                <img class="preview" {% if image.title %} alt="{{ image.title }}" {% endif %} src="{{ full_im.url }}">
-            {% endthumbnail %}
         </div>
+    </div>
 {% endblock content %}
 
 {% block controls %}
@@ -68,8 +78,9 @@
 
 {% block imagestore-related %}
 
-     <div class="tagging">
-            <h2>{% trans "Tags" %}</h2>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+     <div class="tagging center-text">
             {% tags_for_object image as itags %}
             {% for tag in itags %}
                 <a href="{% url 'imagestore:tag' tag.name %}">{{ tag.name }}</a>
@@ -81,4 +92,5 @@
             <a href="{{ image.place.get_absolute_url }}">{{ image.place.name }} →</a>
          </div>
      {% endif %}
+ </div></div>
 {% endblock %}

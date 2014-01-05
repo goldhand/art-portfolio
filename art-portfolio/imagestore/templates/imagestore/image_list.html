@@ -53,18 +53,28 @@
             <div class="image-thumbnails row effect-1">
         {% endif %}
         <div class="col-sm-4">
-            <div class='image-preview thumbnail{% if image.title %} has-ribbon' data-text="{{ image.title }}"{% else %}'{% endif %}>
+            <div class="thumbnail">
+            <div class="image-preview">
                 
             {% thumbnail image.image "770x500" crop="center" as im %}
                 <a class="thumb" rel='gallery-image[ilist]' href="{{ image.image.url }}">
                     <img class="preview img-responsive" {% if image.title %} alt="{{ image.title }}" {% endif %} src="{{ im.url }}">
                 </a>
-                <a href="{% include "imagestore/image-href.html" %}">
-                    
-                </a>
+                
             {% endthumbnail %}
+            <div class="caption center-text">
+                {% if image.title %}
+                <h3>
+                    <a href="{% include "imagestore/image-href.html" %}">
+                    {{ image.title }}
+                    </a>
+                </h3>
+                {% endif %}
+                <p>{{ image.description }}</p>
+                <a href="{% include "imagestore/image-href.html" %}">View</a>
             </div>
         </div>
+        </div></div>
         {% endfor %}
     </div>
     </div>

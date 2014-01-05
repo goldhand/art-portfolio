@@ -48,9 +48,9 @@
                     {% if album.get_head %}
                     
                         {% thumbnail album.get_head.image "400x300" crop='center' as album_head %}
-                            <img class="preview hidden-xs" {% if album.name %} alt="{{ album.name }}" {% endif %} src="{{ album_head.url }}">
-                            <a href="{{ album.get_absolute_url }}" class="visible-xs">
-                            <img class="preview" {% if album.name %} alt="{{ album.name }}" {% endif %} src="{{ album_head.url }}">
+                            <a href="{{ album.get_absolute_url }}">
+                            <img class="preview img-responsive" {% if album.name %} alt="{{ album.name }}" {% endif %} src="{{ album_head.url }}">
+                         
                             </a>
                         {% endthumbnail %}
              

@@ -36,7 +36,7 @@ class ImageForm(forms.ModelForm):
         self.helper.form_class = 'form-horizontal'
         self.helper.label_class = 'col-sm-3 col-md-2'
         self.helper.field_class = 'col-sm-9 col-md-10'
-        self.helper.form_action = 'imagestore:upload'
+        self.helper.form_action = '.'
         self.helper.layout = Layout(
             'title',
             'description',
@@ -58,6 +58,9 @@ class AlbumForm(forms.ModelForm):
     class Meta(object):
         model = Album
         exclude = ('user', 'created', 'updated', 'order')
+        widgets = {
+        'is_public': forms.HiddenInput()
+        }
 
 
     def __init__(self, *args, **kwargs):
@@ -74,6 +77,7 @@ class AlbumForm(forms.ModelForm):
         self.helper.field_template = 'bootstrap3/layout/inline_field.html'
         self.helper.layout = Layout(
             InlineField('name'),
+            InlineField('is_public'),
             Submit('submit', 'Submit')
             )
 

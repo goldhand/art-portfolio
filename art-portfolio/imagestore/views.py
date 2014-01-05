@@ -40,7 +40,9 @@ class AlbumListView(ListView):
     allow_empty = True
 
     def get_queryset(self):
-        albums = Album.objects.filter(is_public=True).select_related('head')
+        albums = Album.objects.all().select_related('head')
+        if not self.request.user.is_staff:
+            albums = albums.filter(is_public=True)
         self.e_context = dict()
         if 'username' in self.kwargs:
             user = get_object_or_404(**{'klass': User, username_field: self.kwargs['username']})
